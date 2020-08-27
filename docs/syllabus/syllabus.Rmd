@@ -1,0 +1,334 @@
+---
+title: "Techniques of Language Documentation"
+subtitle: "(LING 710)"
+# author: "Bradley McDonnell"
+# date: "January 11, 2020"
+output:
+## COMPILING WORD DOC ##  
+#  word_document:
+# always_allow_html: yes
+####
+## COMPILING HTML ##  
+  html_document:
+     toc: true
+     toc_float: true
+     theme: flatly
+     highlight: tango
+####
+bibliography: "bib/references.bib"
+csl: "bib/glossa.csl"
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<!-- |                  | |                   | -->
+<!-- |-----------------:|-|-------------------| -->
+<!-- | **Instructor: ** | | Bradley McDonnell | -->
+<!-- | **Time: **       | | T 1:30-4:30       | -->
+<!-- | **Location: **   | | MO               || -->
+
+
+## Course information
+
+ - **Course number:** 79287
+ - **Instructor:** Bradley McDonnell
+ - **Time:** R 3-5:30
+ - **Location:** (https://hawaii.zoom.us/j/91632524686) 
+ - **Email:** mcdonn@hawaii.edu
+ - **Office hours:** W 2-3
+ 
+<!-- \begin{center} -->
+<!-- \rule{6in}{0.4pt} -->
+<!-- \begin{minipage}[t]{.75\textwidth} -->
+<!-- \begin{tabular}{llcccll} -->
+<!-- \textbf{Instructor:} & Bradley McDonnell & & &  & \textbf{Time:} & T R 10:30--11:45\\ -->
+<!-- \textbf{Email:} &  \href{mailto:mcdonn@hawaii.edu}{mcdonn@hawaii.edu} & & & & \textbf{Place:} & MO 205\\  -->
+<!-- \end{tabular} -->
+<!-- \end{minipage} -->
+<!-- \rule{6in}{0.4pt} -->
+<!-- \end{center} -->
+
+## Course description
+Contemporary language documentation is dedicated to producing a **long-lasting, multipurpose record of a language**. This course will give you the skills you need to produce such a documentation, with special attention given to digital data collection, data sustainability, and the documentation of language-in-use. The skills you develop in this class can be extended to your future fieldwork or toward bringing an existing documentation project in line with current practice. Students will (1) gain an understanding of the current best practices in digital language documentation; (2) develop skills in a prosody-based transcription system that can be applied to any language; (3) become familiar with key software and hardware used in our field; (4) develop skills to troubleshoot data management problems in a variety of fieldwork situations. By the end of the course, students will be able to plan for conducting best-practice language documentation project of their own, from equipment purchase to data collection to data annotation to archiving and presentation.
+
+## Course readings 
+
+The course readings listed in the [course schedule](#course-schedule) can be accessed through [Laulima Resource foler](https://laulima.hawaii.edu/x/gtPBkF) unless they are already available online.
+
+## Required materials
+
+Students are required to have (or have access to) the following:
+
+
+  1. Computer (preferably a laptop)
+
+  - You may use any operating system (Mac OS, Windows, Linux) except when we are working with FLEx, at which point you will need access to Windows or Linux, either on a PC or through an emulator of some kind.
+  - Download the following software in the version listed below:
+  
+    * [ELAN (version 5.9)](https://tla.mpi.nl/tools/tla-tools/elan/download/)
+    * [FLEx (version 9.0.9 beta)](https://software.sil.org/fieldworks/download/)
+    * [lameta (version 0.8.9-beta)](https://github.com/onset/lameta/releases)
+
+2. Closed-ear/closed back (`circumaural') monitoring headphones (recommended)
+  * These headphones will be used with your laptop as well as audio and video recorders.
+
+    * Sennheiser 201, 202 and Audio-Technica ATH-M20 are recommended (Price: \$20--\$45).
+    * It may be possible to check out headphones from the lab or borrow them from a fellow student.
+    * Note that earbuds or on-ear (`supra-aural') headphones are not recommended.
+
+<!--
+    > If students are not already "Advanced Users of the LAE Labs", please do so before week 4. This will allow you to check out recording equipment. See [information on becoming a LAE Labs Advanced User](https://sites.google.com/a/hawaii.edu/laelabsedit/for-lab-users).
+-->
+
+### Instructions for downloading FLEx on virtual machine
+
+Follow the steps provided on these websites in this order: 
+
+  1. Download Ubuntu 16.04.4 [here](https://www.ubuntu.com/download/desktop). Don't do anything else, just have it downloaded before step 2.
+  2. Download Virtual Box for OS X [here](https://www.virtualbox.org/wiki/Downloads).[^2] Follow all instructions closely [here](https://web.archive.org/web/20160819084623/https://linus.nci.nih.gov/bdge/installUbuntu.html), all the way to the bottom of the page.
+  3. I noticed that Ubuntu was running very, very slowly. So follow the instructions [here](https://thomas.vanhoutte.be/miniblog/guide-speed-up-ubuntu-virtualbox/) to speed it up and make it actually useful. 
+  4. Follow instructions [here](http://packages.sil.org/) to install FLEx (aka: Fieldworks). Note: Follow instructions carefully and read all of the dialogue boxes. It can be a bit tricky. 
+
+[^2]: Apparently, Virtual Box can be very slow at first but improves after you restart your computer several times. 
+
+<!-- %    \item Adobe Premiere Pro CC 2018 -->
+<!-- %      \begin{itemize} -->
+<!-- %        \item The video editing software can be purchased as a subscription (\$30/month) from \url{www.adobe.com}. -->
+<!-- %        \item Students will only need to use this software during the section on video editing.  -->
+<!-- %      \end{itemize} -->
+
+
+## Grading
+
+  1. Participation & reading responses [**20%** ]{style="float:right"}
+  
+  * Students are required to be at every class and participate in class discussions of the readings. 
+  * When readings are assigned, students are required to send **two responses (approximately 3-5 sentences each) that contain commentary, criticisms, or questions** on the [Laulima forum](https://laulima.hawaii.edu/x/3KQS0k) about the reading **by 8pm on the Tuesday before the reading is to be discussed **. 
+  * Each student is required to reply to **two** of their classmates' responses **by 8pm on Wednesday** (approximately 2-4 sentences each).
+
+2. Assignments [**20%** ]{style="float:right"}
+  * There will be several short assignments on the topics being discussed in class.
+    1. IRB assignment
+    2. Metadata assignment
+    3. ELAN assignment
+    4. FLEx lexicon assignment
+    5. FLEx glossing assignment
+    6. ELAN-FLEx-ELAN import export assignment
+    7. Data management plan
+    8. ...
+
+3. Presentations [**20%** ]{style="float:right"}
+
+  * Each student will present once a topic listed below: 
+      1. Digital data management in language documentation
+      2. Hardware/software for language documentation
+
+4. Audiovisual recording & transcription [**20%** ]{style="float:right"}
+  
+  * Each student will make a recording of a conversation of at least 1/2 hour.
+      * The recording must use video with a separate audio recorder.
+      * The audio and video will be synced, edited and exported for transcription in ELAN. 
+  * Students will transcribe a small portion of the recording using Discourse Transcription [@dubois1993outline].
+  
+5. Documentation enrichment project [**20%** ]{style="float:right"}
+
+  * Enrich a portion of either the documentation of Besemah or Nasal. In week 6 of the semester students will begin meeting with me to discuss the areas of the documentation project on which they would like to work. The goal of this project is to give student hands on experience working with documentary materials, using the technical skills that they have learned in this class. Possible projects include the following:
+    
+    * Prepare and possibly edit audio and video recordings to be archived in PARADISEC or ELAR.
+    * Enrich and organize metadata and consent materials.
+    * Edit ELAN files to improve the accuracy of alignment and English free translations. 
+    * Prepare ELAN files to be imported into FLEx.
+    * Export ELAN files into FLEx and gloss different speech events.
+    * ...
+
+<!--(<http://catalog.paradisec.org.au/collections/BJM01>)--> 
+<!-- (<https://elar.soas.ac.uk/Collection/MPI1079691>) -->
+
+## Presentations
+
+Students are required to do *two* mini-presentations. These are short 10 minute presentations that explain topics to the class in a concise, useful way. The presentation should provide an overview of the topic with illustrative examples that help other students understand how the topic applies to language documentation. Each presentation should be accompanied by a short presentation and/or a 2 page (single-spaced) handout with relevant information and examples. The handout should serve as a kind of **cheat sheet**.
+
+### Presentation 1 topics 
+
+  * IMDI/CMDI metadata standards
+  * OLAC metadata standards
+  * XML & JSON
+  * Unicode
+  * Digital audio file formats
+  * Digital video file formats
+  * ISO 693-3 & Glottocodes
+  * DOIs, PIDs, and permanent handles
+  * Repositories, servers, and DSpace
+
+### Presentation 2 topics  
+
+  * [Extensible Interlinearized Glossed Text (Xigt)](https://github.com/xigt/xigt/wiki)
+  * [SayMore](https://software.sil.org/saymore/download/)
+  * [Waldayu](http://waldayu.org/)
+  * [Aikuma](http://www.aikuma.org/)
+  * [EXMARaLDA](http://exmaralda.org/)
+  * [SILKin](https://software.sil.org/silkin/)
+  * [Bloom](https://bloomlibrary.org)
+  * [XLingPaper](https://software.sil.org/xlingpaper/)
+  * [Dictionary App Builder](https://software.sil.org/dictionaryappbuilder/)
+  * [Elpis](https://github.com/CoEDL/elpis)
+  * [Mother Tongues Dictionaries UI](https://colab.research.google.com/drive/1Z2Isg5qAFdINpxnTnKPpa1GDOpTfSSFg#scrollTo=eG2dFklvnrT-)
+  * [First Voices](https://www.firstvoices.com/)
+  * [LingSync](https://www.lingsync.org/)
+  * [Kratylos](https://kratylos.org)
+
+## Course Policy
+  * Attendance in this course is crucial. In order to be successful in the course, you need to attend *every* class and be punctual. Excessive absences or tardiness may result in a grade reduction.
+  * Please be attentive during class. This means that students are *not* working on other tasks during class (e.g., responding to emails) or browsing the internet (e.g., Facebook).
+
+## Needs (ADA Statement)
+If you have a disability for which you need accommodations in this class or any other special need (e.g. religious holidays), please inform the instructor as soon as possible. The KOKUA Program (Office for Students with Disabilities) can be reached at (808) 956-7511 or (808) 956-7612 (voice/text) in room 013 of the Queen Lili‘uokalani Center for Student Services.
+
+
+## Course Schedule
+<!--The ***tentative*** course schedule roughly follows the order (i) preparation, (ii) data collection, (iii) data annotation, (iv) data analysis, (v) data archival, and (iv) data dissemination.-->
+
+> *These readings and due dates are subject to change.*
+
+### Week 1 (8/27): Introduction
+  
+  * **Class activities:**
+    * Review syllabus
+    * Discuss class format
+    * Discuss audio and video recording assignments
+    * Discuss software
+    
+### Week 2 (9/3): Overview of language documentation
+
+  * **Readings:** @seifart2018language,@austin2016language,@bird2003seven,@arkhipov2018reflections
+
+  * **Class activities:** [Technology in Lang Doc](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/1-dixon-2010-technology/1-dixon-2010-technology.pdf), Seven dimensions of Lang Doc ([slides](https://mcdonn.github.io/2020-710/slides-handouts/1-bird-simmons-2003/1-bird-simmons-2003.html),  [handout](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/1-dixon-2010-technology/1-dixon-2010-technology.pdf))
+
+  * **Assignments:** [Download required software](#required-materials)
+  * **Additional readings:** @woodbury2011language, @mcdonnell2018introduction
+  
+  <!--FALL-2020 note Dipersio 2014 should be only required reading on IRB-->
+
+### Week 3 (9/10): Data management, archiving,  metadata, and IRB
+  
+  * **Readings:** @thieberger2012linguistic, @coxtoappearmanaging, @good2011data [: section 11.5], @bowern2015linguistic [: section 4.5], @dipersio2014linguistic
+    - [A website is not an archive!](http://www.paradisec.org.au/blog/2017/11/a-website-is-not-an-archive/)
+    - [Finding an archive](https://www.linguisticsociety.org/content/finding-archive-your-endangered-language-research-data)
+    - [PARDISEC archiving workflow](http://www.paradisec.org.au/wp-content/uploads/2016/07/Paradisec_ArchivingWorkflow.pdf)
+    - [ELAR: instructions for depositors (pp. 1-12)](https://www.soas.ac.uk/elar/helpsheets/file122786.pdf)
+  * **Class activities:** [Slides](https://mcdonn.github.io/2020-710/slides-handouts/2-data-management/2-data-management.html)
+  * **Assignments:** 
+  * **Additional readings:** @burnard2005metadata, @thieberger2015paradisec, @salffner2015guide, @robinson2010informed, @bowern2015linguistic [: ch. 11], @dipersio2014linguistic, @vandriem2016endangered, @bowern2010fieldwork
+  
+### Week 4 (9/17): Audio Recording
+  
+  * **Readings:** @margetts2011audio [: p. 13-32], @artis2014shut [: p. 183-216]
+  * **Class activities:** ([Slides](https://mcdonn.github.io/2020-710/slides-handouts/4-audio-recording/4-audio-slides.html))
+    
+  * **Assignment:** 
+    * Metadata assignment: Spreadsheet vs lameta
+    * [CITI certificate training](https://researchcompliance.hawaii.edu/programs/human-studies/hs-training/) for ***"Non-Exempt Social or Behavioral Sciences Research"***. Submit PDF showing you completed the training on Laulima.
+  * **Additional readings:** @nathan2008minding [: section 4], @bowern2015linguistic [: section 2.2]
+  
+
+### Week 5 (9/24): Video Recording
+
+  * **Readings:** @seyfeddinipur2011reasons [: section 6.4], @artis2014shut [: p. 35-83, 113-182]
+  * **Class activities:** 
+    - Share audio recordings and experiences
+    - [Slides](https://mcdonn.github.io/2020-710/slides-handouts/5-video-recording/5-video-recording.html)
+  * **Assignment:** Group audio recording assignment
+  * **Additional readings:** @dimmendaal2010language [: p. 33-53] and @margetts2011audio
+
+### Week 6 (10/1): Video conversion 
+
+  * **Readings:** Read over [ELAR video conversion handout](https://www.soas.ac.uk/elar/helpsheets/file120820.pdf) to get an ideo of how complex video conversion can be
+  * **Class activities:** ([slides](https://mcdonn.github.io/2020-710/slides-handouts/6-video-editing/6-video-editing.html), [practice](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/6-video-editing/practice.md))
+  * **Assignment:** Group video recording assignment    
+    
+### Week 7 (10/8): FLEx I
+
+  * **Readings:** Selected [online training modules](https://vimeo.com/channels/fieldworks) below:
+    - [Quick tour of Fieldworks Language Explorer, FLEx](https://vimeo.com/channels/fieldworks/111419885)
+    - [Understand the layout of panes in Fieldworks Language Explorer, FLEx](https://vimeo.com/channels/fieldworks/111419886)
+    - [Learn how to configure columns in a browse view in Fieldworks Language Explorer, FLEx](https://vimeo.com/channels/fieldworks/111419888)
+    - [Learn how to apply filters to data in FieldWorks Language Explorer, FLEx](https://vimeo.com/channels/fieldworks/111419890)
+    - [Learn options for sorting data in FieldWorks Language Explorer, FLEx](https://vimeo.com/channels/fieldworks/111421269)
+    - [Learn how to show and hide hidden fields in FLEx (FieldWorks Language Explorer) and how to control which fields are shown normally.](https://vimeo.com/channels/fieldworks/111421271)
+    - [Learn how to add a new lexical entry in FLEx](https://vimeo.com/channels/fieldworks/111522254)
+    - [How to add allomorphs to entries in FLEx](https://vimeo.com/channels/fieldworks/116264100)
+  * **Assignment:** Bring a dictionary of a language that uses a Latin script
+  * **Class activities:** [handout](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/7-flex/7-flex-intro.pdf)
+  * **Additional readings:** 
+
+### Week 8 (10/15): FLEx II
+
+  * **Readings:** @bow2003general, [Leipzig Glossing Rules](http://www.eva.mpg.de/lingua/resources/glossing-rules.php)
+  * **Assignment:** 
+  * **Additional readings:**
+  * **Class activities:** 
+    - [FLEx activities](https://lingtran.net/FLEx+8)
+      - Lexicon Edit 3
+      - Interlinearization
+      - Parsing & Concordance
+    - [Slides](https://mcdonn.github.io/2020-710/slides-handouts/7-flex/7-training-indonesia.html)
+
+### Week 9 (10/22): ELAN I
+
+  * **Readings:** @berez2007review
+  * **Assignment:** FLEx Assignment
+  * **Additional readings:** 
+  
+### Week 10 (10/29): ELAN II
+
+  * **Readings:** TBD
+  * **Assignment:**
+  * **Additional readings:**
+
+
+### Week 11 (11/5): FLEx-ELAN
+
+  * **Readings:** [Working with ELAN and FLEx together (Handout #1)](https://www.soas.ac.uk/elar/helpsheets/file122785.pdf)
+  * **Assignment:** [Audiovisual Recording Assignment](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/11-audiovisual-recording-assignment/11-audiovisual-recording-assignment.pdf)
+  * **Additional readings:**
+  
+### Week 12 (11/12): Transcription (Level 1)
+
+  * **Readings:** @himmelmann2006prosody, @himmelmann2018meeting, @dubois1992discourse [: ch. 1, 4-6, 10] (Introduction, Units, Speakers, Transitional Continuity, Pause)
+  * **Assignment:** ELAN FLEx import export assignment
+  * **Additional readings:**
+  * **Class activities:** [slides](https://mcdonn.github.io/2020-710/slides-handouts/12-dt-intro-units/1-dt-intro/1-dt-intro.html)
+  
+### Week 13 (11/19): Transcription (Level 2)
+
+  * **Readings:** @dubois1992discourse [: ch. 11-12], Du Bois handouts (Vocal Noises, Quality)
+  * **Assignment:** 
+    * Complete DT take-home task.
+    * Transcribe three minutes of conversation up to level 1. Be ready to share/discuss excerpt!
+  * **Additional readings:** @dingemanse2014conversation
+  * **Class activities:** [slides](https://mcdonn.github.io/2020-710/slides-handouts/13-dt-trans-cont-pause-overlap-truncation/3-dt-transitional-continuity/3-transitional-continuity-slides.pdf)
+
+<!-- * R 4/19: Du Bois handouts % Watch mini-lectures on RR <https://www.coursera.org/learn/reproducible-research/lecture/wdGXb/introduction}, Berez et al. (2018) %Data citation and attribution -->
+
+**Week 14 (11/26): NO CLASS**
+
+### Week 15 (12/3): Transcription (Level 3)
+
+  * **Readings:** @dubois1992discourse [: ch. 17], Du Bois handouts (Spelling)
+  * **Assignment:** 
+    * Transcribe three minutes of conversation up to level 2.5 (i.e., transitional continuity (, . ?), pause, laughter, overlap, unintelligble speech). Be ready to share/discuss excerpt!
+  * **Additional readings:**
+
+### Week 16 (12/10): Transcription, annotation, searching, and final presentations
+
+  * **Readings:** @schultze-berndt2006linguistic, McDonnell (to appear)
+
+  * **Assignment:** 
+    * Enrich three minutes of conversation up to level 3 and upload to Laulima.
+    * Documentation Enrichment Project final presentation
+
+## Readings
