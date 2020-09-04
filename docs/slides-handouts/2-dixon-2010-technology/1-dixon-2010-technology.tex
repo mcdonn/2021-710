@@ -1,0 +1,56 @@
+\documentclass{letter}
+
+\usepackage{fontspec}
+  \setmainfont{Linux Libertine O}
+
+\usepackage{mdframed}
+
+\newenvironment{myenv}[1]
+  {\mdfsetup{
+    frametitle={\colorbox{white}{\space#1\space}},
+    innertopmargin=10pt,
+    frametitleaboveskip=-\ht\strutbox,
+    frametitlealignment=\center
+    }
+  \begin{mdframed}%
+  }
+  {\end{mdframed}}
+
+\usepackage{fancyhdr}
+  \fancypagestyle{firstpage}{
+    \fancyhf{}
+    \fancyhead[L]{01/13/2020}
+    \fancyhead[R]{LING710}
+  }
+
+\pagenumbering{gobble}
+\begin{document}
+
+\begin{center}
+  {\huge\textbf{Technology in language documentation}}
+\end{center}
+
+\noindent Consider the following excerpt from Dixon (2010: 317-318).\footnote{Dixon, R.M.W. 2010. \textit{Basic linguistic theory.} Vol. 1. Oxford; New York: Oxford University Press.}\\
+
+\begin{quote}
+Equipment should be kept to a minimum. Too much flashy machinery may alienate the linguist from members of the community and will make it more difficult to achieve success in immersion fieldwork. And the more machinery one takes into the field (and the more complicated it is) the more there is to go wrong. A good-quality robust recorder (of either the cassette or the mini-disc type) is essential. In case this might fail, there should be a back-up recorder of the same type.
+
+\bigskip
+
+There is nowadays a fashion to talk of `documentation' which involves use of a video camera. The experience of some---but by no means all---practised fieldworkers is that to introduce a video camera into a fieldwork situation gravely disturbs the chance of establishing a close relationship between linguist and speech community. This `documentation' may severely jeopardize the likelihood of success for a standard linguistic description (grammar, texts, and lexicon).
+
+\bigskip
+
+Similar remarks apply for computers. In addition, most fieldwork situations have no electricity, or else an occasional and unreliable supply. If a linguist takes into the field a reliance on computers, it is highly likely that they will, from time to time, become frustrated, with their productivity being impaired. As mentioned in \S8.2, energy which has to be spent on computational matters is far better directed towards learning and analysing the language. 
+\end{quote}
+
+\begin{myenv}{Discussion Questions}
+\begin{enumerate}
+  \item Do you agree or disagree with the general spirit of this quote?
+  \item In what ways do you agree with this quote? 
+  \item In what ways do you disagree with this quote?
+  \item Come up with a short response to Dixon's position.
+\end{enumerate}
+\end{myenv}
+
+\end{document}

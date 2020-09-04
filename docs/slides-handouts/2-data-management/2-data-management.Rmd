@@ -1,0 +1,58 @@
+---
+title: "Data management & IRB"
+subtitle: "710 | Week 2"
+author: "Bradley McDonnell"
+date: "2020/1/20 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: center, middle
+
+# Data management discussion
+
+## Thieberger & Berez (2012), Cox (to appear) 
+
+---
+
+# Data management activity
+
+1. Based upon the information your group has been given, create a data management workflow. In so doing, answer the following questions: 
+
+  - How will you collect data? 
+  - In what forms will it be recorded?
+  - How/when will you process the data?
+  - What software will you use?
+  - How will you manage metadata? 
+  - ...
+
+***Provide a practical and specific plan with an appropriate workflow based upon what you learned from Thieberger & Berez (2012) and Cox (to appear).***
+
+---
+
+# What is an IRB?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d15kYGwYU24?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+class: center, middle
+
+# IRB discussion
+
+## Bowern (2010), Bowern (2015: Section 12.4, p. 197–203)
+
+---
+
+# IRB at UH
+
+- The UH Human Studies Program is under the Office of Research Compliance: <https://researchcompliance.hawaii.edu/programs/human-studies/>
+
+- Information on submitting a protocol can be found:  <https://researchcompliance.hawaii.edu/programs/human-studies/uh-eprotocol/>
+
+- Protocols are submitted on **eprotocol**: <https://uhmanoa.keyusa.net/>
+
+- CITI info can be found under training: <https://researchcompliance.hawaii.edu/programs/human-studies/hs-training/>

@@ -1,0 +1,281 @@
+---
+title: "Seven dimensions of portability"
+subtitle: "Bird & Simmons (2003)"
+author: "Bradley McDonnell"
+date: "2020/9/3 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: center, middle
+
+# What is portability?
+
+
+---
+
+# What is portability?
+
+### From Computer Science:
+
+> the usability of the same software in different environments. Here they say they are talking about portability of data: the usability of data in different environments.
+
+---
+
+# Why was this article written, why is it important?
+
+### In 2003 there were:
+
+  - new general tools (word processors, hypertext processors, database packages).
+  - new specialized tools (Shoebox, Praat, Transcriber...).
+  - new specialized technology (recording devices, storage devices).
+
+> **Problem:** specialized work flows, arcane instructions for access, risk of loss of data and info at every level.
+
+---
+
+# Significance of B&S 2003
+
+B&S identify **seven problem areas or "dimensions"** (with sub-dimensions) for portability in linguistics. 
+
+  - They posit discipline-wide value statements about these dimensions, and provide recommendations for Best Practices. Readers encouraged to suggest alternate BP, or alternate values.
+
+
+---
+class: center, middle, inverse
+
+# Dimension 1: Content
+
+---
+
+## Dimension 1: Content
+
+**Coverage:**
+  - We value comprehensive documentation, broad in scope and rich in detail.
+
+> **BP:** make rich records of rich interactions; document the field methods used.
+
+--
+
+**Accountability:**
+  - We value the ability to verify linguistic claims.
+
+> **BP:** make the full documentation available (a grammar is based on a text corpus); provide primary recordings for transcribed texts; time-align transcriptions to recordings; when a recording has been edited, provide the original.
+
+--
+
+**Terminology**
+
+  - We value the ability to compare terminology in different resources.
+
+> **BP:** Map the underlying terminology/tags/transcription symbols to a standardized ontology (GOLD, IPA).
+
+---
+class: center, middle, inverse
+
+# Dimension 2: Format
+
+
+---
+
+## Dimension 2: Format
+
+**Openness**
+  - We value the ability to make use of a resource without the need for unique or proprietary software.
+
+> **BP:** Store langdoc and description in open formats (published, nonproprietary specifications); prefer formats supported by multiple software; prefer formats supported by free tools; prefer published proprietary formats over secret proprietary formats.
+
+--
+
+**Encoding**
+  - We value a character encoding that is not limited by the font used to render it.
+
+ > **BP:** Use Unicode; avoid Private Use characters (or document them well); document any scheme for transliterating.
+
+---
+## Dimension 2: Format
+
+**Markup**
+  - We value the potential to write new software for processing extant data in novel ways.
+
+> **BP:** Use descriptive (not presentational) markup; use XML whenever possible with a schema or DTD; prepare and archive an explanatory document if you use some other descriptive markup.
+
+--
+
+**Rendering**
+  - We value the ability to read content in a conventional way.
+  
+> **BP:** provide and archive human readable versions of your materials using common formats (HTML, txt, pdf, paper).
+
+---
+class: center, middle, inverse
+
+# Dimension 3: Discovery
+
+---
+
+## Dimension 3: Discovery
+
+**Existence**
+  - We value the ability of any potential user to learn about the existence of a resource.
+
+> **BP:** Archive your materials in an OLAC archive; make HTML easy to find via keywords.
+
+--
+
+**Relevance**
+
+  -  We value the ability of a potential user to judge the relevance of a resource without having to first obtain a copy.
+
+> **BP:** Use good descriptive metadata (e.g. OLAC metadata set).
+
+---
+class: center, middle, inverse
+
+# Dimension 4: Access
+
+---
+
+## Dimension 4: Access
+
+**Scope**
+
+  -  We value the ability to access a complete resource, not just a part of it.
+
+> **BP:** Publish complete primary documentation and a method by which users can obtain it.
+
+--
+
+**Process**
+
+  -  We value making it easy for users to gain access to resources.
+
+> **BP:** document the process for access as part of the metadata.
+
+--
+
+**Ease**
+
+  -  We value users being able to access resources wherever the users may be located, with whatever computer infrastructure.
+
+> **BP:**  Make CDs/DVDs available; make low-bandwidth surrogates (e.g. mp3) available online; provide print versions for the speech community with little computer access.
+
+---
+class: center, middle, inverse
+
+# Dimension 5: Citation
+
+
+---
+
+## Dimension 5: Citation
+
+**Bibliography**
+
+  -  We value being able to give credit to the creator of resources.
+
+> **BP:**  in the metadata, instruct users how to cite the resource.
+
+--
+
+**Persistence**
+
+  -  We value the ability to locate resources even when their actual locations or filenames change.
+
+> **BP:** Ensure that items have a persistent identifier (ISBN, DOI); ensure that the identifier resolves (=points to) either an instance of the resource or directions on how to obtain the resource.
+
+---
+
+## Dimension 5: Citation
+
+**Immutability**
+
+  -  We value citing versions of resources that never change.
+
+> **BP:** distinguish versions of a resource with a distinct identifier.
+
+--
+
+**Granularity**
+
+  -  We value being able to cite component parts of a resource.
+
+> **BP:** provide a way to cite a part of a resource (e.g., timestamps).
+
+---
+class: center, middle, inverse
+
+# Dimension 6: Preservation
+
+
+---
+
+## Dimension 6: Preservation
+
+**Longevity**
+
+  -  We value ongoing access to resources over the long term.
+
+> **BP:**  Use a credible archive; digitize analog materials; migrate offline materials regularly; archive physical versions of the materials.
+
+--
+
+**Safety**
+
+  -  We value ongoing access to resources over the long term.
+
+> **BP:**  Ensure LOCKSS: Lots of copies keeps stuff safe; create a disaster recovery plan.
+
+--
+
+**Media**
+
+  -  We value access to a resource beyond the lifespan of any particular storage medium.
+
+> **BP:** use an archive with well-maintained servers and a commitment to migrate to new media; transfer your offline data at regular intervals to new media.
+
+---
+class: center, middle, inverse
+
+# Dimension 7: Rights
+
+
+---
+
+## Dimension 7: Rights
+
+**Terms of use**
+
+  -  We value easy to understand restrictions on use of resources.
+
+> **BP:** fully document terms of use, including specifics of how an item may or may not be used.
+
+--
+
+**Benefit**
+
+  -  We value maximal application of a resource toward the benefit of human knowledge and experience.
+
+> **BP:** Ensure that resource can be used for research and is not limited to the use of the researcher, project or agency responsible for collecting it.
+
+---
+
+## Dimension 7: Rights
+
+**Sensitivity**
+
+  -  We value the rights of the speaker community.
+
+> **BP:**  Document any sensitivities in detail, and include a list of any uses that must be avoided.
+
+--
+
+**Balance**
+
+  -  We value the long-term benefit of a resource, even when access has to be restricted in the short term.
+
+> **BP:**  limit stipulations of sensitivity to the sensitive parts only; associate each sensitivity with an expiration or review date; when sensitivity is only for the benefit of the researcher, the expiration date should be no more than five years.

@@ -1,0 +1,247 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fontspec}
+  \setmainfont{Linux Libertine O}
+
+\usepackage{mdframed}
+
+\newenvironment{myenv}[1]
+  {\mdfsetup{
+    frametitle={\colorbox{white}{\space#1\space}},
+    innertopmargin=10pt,
+    frametitleaboveskip=-\ht\strutbox,
+    frametitlealignment=\center
+    }
+  \begin{mdframed}
+  }
+  {\end{mdframed}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{1/13/2020}
+\lhead{LING710}
+\chead{Bird \& Simons (2003)}
+\rfoot{Page \thepage}
+
+\usepackage{enumitem}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+  {\huge\textbf{Seven dimensions of portability}}
+\end{center}
+
+\begin{myenv}{What is portability?}
+  \begin{description}
+    \item[From Computer Science:] the usability of the same software in different environments. Here they say they are talking about portability of data: the usability of data in different environments.
+  \end{description}
+  \bigskip
+\end{myenv}
+
+\begin{myenv}{Why was this article written, and why is it important?} 
+In 2003 there were:
+  \begin{itemize}
+    \item New general tools (word processors, hypertext processors, database packages).
+    \item New specialized tools (Shoebox, Praat, Transcriber\ldots).
+    \item New specialized technology (recording devices, storage devices).
+  \end{itemize}
+  \begin{description}
+    \item[Problem:] specialized work flows, arcane instructions for access, risk of loss of data and info at every level.
+  \end{description}
+
+
+\noindent B\&S identify seven problem areas or ``dimensions'' (with sub-dimensions) for portability in linguistics. They posit discipline-wide value statements about these dimensions, and provide recommendations for Best Practices. Readers encouraged to suggest alternate BP, or alternate values.
+\end{myenv}
+
+\bigskip
+
+\begin{enumerate}
+  \item Content
+  \begin{enumerate}
+    \item Coverage:
+    \begin{enumerate}
+      \item We value comprehensive documentation, broad in scope and rich in detail.
+      \begin{description}
+      \item[BP:] make rich records of rich interactions; document the field methods used.
+      \end{description}
+    \end{enumerate}
+    \item Accountability
+    \begin{enumerate}
+      \item We value the ability to verify linguistic claims.
+      \begin{description}
+        \item[BP:] make the full documentation available (a grammar is based on a text corpus); provide primary recordings for transcribed texts; time-align transcriptions to recordings; when a recording has been edited, provide the original.
+      \end{description}
+    \end{enumerate}
+    \item Terminology
+    \begin{enumerate}
+      \item We value the ability to compare terminology in different resources.
+      \begin{description}
+        \item[BP:] Map the underlying terminology/tags/transcription symbols to a standardized ontology (GOLD, IPA).
+      \end{description}
+    \end{enumerate}
+  \end{enumerate}
+  \item Format
+  \begin{enumerate}
+    \item Openness
+    \begin{enumerate}
+      \item We value the ability to make use of a resource without the need for unique or proprietary software.
+      \begin{description}
+        \item[BP:] Store langdoc and description in open formats (published, nonproprietary specifications); prefer formats supported by multiple software; prefer formats supported by free tools; prefer published proprietary formats over secret proprietary formats.
+      \end{description}
+    \end{enumerate}
+    \item Encoding
+    \begin{enumerate}
+      \item We value a character encoding that is not limited by the font used to render it.
+      \begin{description}
+        \item[BP:] Use Unicode; avoid Private Use characters (or document them well); document any scheme for transliterating.
+      \end{description}
+    \end{enumerate}
+    \item Markup
+    \begin{enumerate}
+      \item We value the potential to write new software for processing extant data in novel ways.
+      \begin{description}
+      \item[BP:]  Use descriptive (not presentational) markup; use XML whenever possible with a schema or DTD; prepare and archive an explanatory document if you use some other descriptive markup. 
+      \end{description}
+    \end{enumerate}
+    \item Rendering
+    \begin{enumerate}
+    \item We value the ability to read content in a conventional way.
+      \begin{description}
+        \item[BP:]  provide and archive human readable versions of your materials using common formats (HTML, txt, pdf, paper).
+      \end{description}
+    \end{enumerate}
+  \end{enumerate}
+  \item Discovery
+    \begin{enumerate}
+      \item Existence
+      \begin{enumerate}        
+        \item We value the ability of any potential user to learn about the existence of a resource.
+        \begin{description}
+          \item[BP:]  Archive your materials in an OLAC archive; make HTML easy to find via keywords.
+      \end{description}
+    \end{enumerate}
+    \item Relevance
+    \begin{enumerate}
+      \item We value the ability of a potential user to judge the relevance of a resource without having to first obtain a copy.
+      \begin{description}
+        \item[BP:]  Use good descriptive metadata (e.g. OLAC metadata set).
+      \end{description}
+    \end{enumerate}
+  \end{enumerate}
+  \item Access
+  \begin{enumerate}
+    \item Scope
+    \begin{enumerate}
+      \item We value the ability to access a complete resource, not just a part of it.
+      \begin{description}
+        \item[BP:]  Publish complete primary documentation and a method by which users can obtain it.
+      \end{description}
+    \end{enumerate}
+    \item Process
+    \begin{enumerate}
+      \item We value making it easy for users to gain access to resources.
+      \begin{description}
+        \item[BP:]  document the process for access as part of the metadata.
+      \end{description}
+    \end{enumerate}
+    \item Ease
+    \begin{enumerate}
+      \item We value users being able to access resources wherever the users may be located, with whatever computer infrastructure.
+      \begin{description}
+        \item[BP:]  Make CDs/DVDs available; make low-bandwidth surrogates (e.g. mp3) available online; provide print versions for the speech community with little computer access.
+      \end{description}
+    \end{enumerate}
+  \end{enumerate}
+  \item Citation
+  \begin{enumerate}
+     \item Bibliography
+     \begin{enumerate}
+       \item We value being able to give credit to the creator of resources.
+       \begin{description}
+         \item[BP:]  in the metadata, instruct users how to cite the resource.
+      \end{description}
+    \end{enumerate}
+    \item Persistence
+    \begin{enumerate}
+      \item We value the ability to locate resources even when their actual locations or filenames change.
+      \begin{description}
+        \item[BP:]  Ensure that items have a persistent identifier (ISBN, DOI); ensure that the identifier resolves (=points to) either an instance of the resource or directions on how to obtain the resource.
+      \end{description}
+    \end{enumerate}
+    \item Immutability
+    \begin{enumerate}
+      \item We value citing versions of resources that never change.
+      \begin{description}
+        \item[BP:]  distinguish versions of a resource with a distinct identifier.
+      \end{description}
+    \end{enumerate}
+    \item Granularity
+    \begin{enumerate}
+      \item We value being able to cite component parts of a resource.
+      \begin{description}
+\item[BP:]  provide a way to cite a part of a resource (eg timestamps).
+      \end{description}
+    \end{enumerate}
+  \end{enumerate}
+  \item Preservation
+  \begin{enumerate}
+    \item Longevity
+    \begin{enumerate}
+      \item We value ongoing access to resources over the long term.
+      \begin{description}
+      \item[BP:]  Use a credible archive; digitize analog materials; migrate offline materials regularly; archive physical versions of the materials.
+      \end{description}
+    \end{enumerate}
+    \item Safety
+    \begin{enumerate}
+      \item We value ongoing access to resources over the long term.
+      \begin{description}
+        \item[BP:]  Ensure LOCKSS: Lots of copies keeps stuff safe; create a disaster recovery plan. 
+      \end{description}
+    \end{enumerate}
+    \item Media
+    \begin{enumerate}
+      \item We value access to a resource beyond the lifespan of any particular storage medium.
+      \begin{description}
+        \item[BP:]  use an archive with well-maintained servers and a commitment to migrate to new media; transfer your offline data at regular intervals to new media.
+      \end{description}
+    \end{enumerate}
+  \end{enumerate}
+  \item Rights
+  \begin{enumerate}
+    \item Terms of use
+    \begin{enumerate}
+      \item We value easy to understand restrictions on use of resources.
+      \begin{description}
+        \item[BP:]  fully document terms of use, including specifics of how an item may or may not be used.
+      \end{description}
+    \end{enumerate}
+    \item Benefit
+    \begin{enumerate}
+      \item We value maximal application of a resource toward the benefit of human knowledge and experience.
+      \begin{description}
+        \item[BP:]  Ensure that resource can be used for research and is not limited to the use of the researcher, project or agency responsible for collecting it.
+      \end{description}
+    \end{enumerate}        
+    \item Sensitivity
+      \begin{enumerate}
+        \item We value the rights of the speaker community.
+      \begin{description}
+        \item[BP:]  Document any sensitivities in detail, and include a list of any uses that must be avoided.
+      \end{description}
+    \end{enumerate}
+    \item Balance
+    \begin{enumerate}
+      \item We value the long-term benefit of a resource, even when access has to be restricted in the short term.
+      \begin{description}
+       \item[BP:]  limit stipulations of sensitivity to the sensitive parts only; associate each sensitivity with an expiration or review date; when sensitivity is only for the benefit of the researcher, the expiration date should be no more than five years.
+      \end{description}
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
