@@ -1,8 +1,8 @@
 ---
 title: "Data management & IRB"
-subtitle: "710 | Week 2"
+subtitle: "710 | Week 3"
 author: "Bradley McDonnell"
-date: "2020/1/20 (updated: `r Sys.Date()`)"
+date: "2020/9/10 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -33,17 +33,52 @@ class: center, middle
 ***Provide a practical and specific plan with an appropriate workflow based upon what you learned from Thieberger & Berez (2012) and Cox (to appear).***
 
 ---
+class: center, middle
 
-# What is an IRB?
+# Metadata discussion
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d15kYGwYU24?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Good (2011), Bowern (2015)
+
+---
+class: center, middle
+# Metadata heirarchy
+
+
+## Project
+
+### Corpus
+
+#### Session
+
+##### Resource
+
+---
+
+# Organizing metadata
+
+We'll consider two ways of organizing metadata. 
+  
+  1. Spreadsheet [Kaipuleohone](/../3-metadata-archiving/kaipuleohone-depositor-metadata.xls)
+  2. Database 
+    - [lameta](https://github.com/onset/lameta/releases) for Mac, PC 
+    - [SayMore](https://software.sil.org/saymore/) for PC
+
+Let's take a quick tour of 
+
 
 ---
 class: center, middle
 
 # IRB discussion
 
-## Bowern (2010), Bowern (2015: Section 12.4, p. 197–203)
+## DiPersio (2014)
+
+
+---
+
+# What is an IRB?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d15kYGwYU24?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

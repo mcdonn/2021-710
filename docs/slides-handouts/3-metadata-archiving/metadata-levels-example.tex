@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{mdframed}
+\newenvironment{myenv}[1]
+  {\mdfsetup{
+    frametitle={\colorbox{white}{\space#1\space}},
+    innertopmargin=10pt,
+    frametitleaboveskip=-\ht\strutbox,
+    frametitlealignment=\center
+    }
+  \begin{mdframed}%!TEX encoding = UTF-8 Unicode
+  }
+  {\end{mdframed}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{1/28/2017}
+\lhead{LING710}
+\chead{}
+\rfoot{Page \thepage}
+
+%\pagestyle{firstpage}
+%\fancyhf{}
+% \textsc{Department of Linguistics}\vspace{0.75in}}}
+
+\usepackage{enumitem}
+
+\title{Metadata}
+\date{}
+%\pagenumbering{gobble}
+\begin{document}\thispagestyle{empty}
+%\maketitle
+\begin{center}
+{\huge\textbf{Metadata}}
+\end{center}
+
+
+\begin{myenv}{Project-level/corpus-level metadata}
+Besemah (alternatively, Pasemah) is a little-known Malayic language in the Western Malayo-Polynesian branch of the Austronesian language family. It is spoken by approximately 400,000 people primarily in the highlands, but sporadically throughout the lowlands of southwest Sumatra, straddling both South Sumatra and Bengkulu provinces. Besemah is considered to be a part of a cluster of Malayic isolects that roughly cover the southern half of Bengkulu province as well as the western highlands of South Sumatra province, traditionally referred to as the Middle Malay or Central Malay languages. These languages are now referred to as South Barisan Malay.  
+
+The aim of the Besemah Language Documentation Project (BLDP) is to create a comprehensive record of the Besemah language as it is currently spoken in as natural a setting as possible, utilizing current methods in the field of language documentation. BLDP currently has a fairly large corpus primarily made up of dialogic spontaneous speech (conversation), but also including traditional and modern narratives, elicited wordlists and sentences, and lexicographical materials.\\
+\end{myenv}
+
+\begin{myenv}{Session/bundle-level metadata}
+\textbf{A conversation between two downriver neighbors}
+\\
+
+\noindent A conversation primarily between two middle-aged men, Istan and Darso. The two men are sitting in Darso's front room under his house. I was looking to record with other people when I went to the rice paddies on the downriver side of Karang Tanding. I came across Istan coming home from his rice paddy with a basket full of black pepper that he had just picked. He agreed to record, and we asked his neighbor, Darso, to record with him. They sat in the front room and talked for a little over an hour. There are two points in the conversation where Istan's wife, Merlaini, brings the men coffee and Darso's wife, Masdi, comes home. The recording quality is overall very good. However, Istan does move his head mounted microphone quite a bit. By the end of the recording, it is very far from his mouth.\\
+\end{myenv}
+
+
+\begin{myenv}{Resource-level metadata}
+\begin{enumerate}
+  \item PSE-20140906-C.wav
+  \item PSE-20140906-C.mp4
+  \item PSE-20140906-C-S1.wav
+  \item PSE-20140906-C-S2.wav
+  \item Darso's speaker metadata 
+  \item Istan's speaker metadata
+\end{enumerate}
+\end{myenv}
+
+
+
+
+\end{document}
