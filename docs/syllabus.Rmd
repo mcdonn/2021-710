@@ -221,16 +221,15 @@ If you have a disability for which you need accommodations in this class or any 
     - [PARDISEC archiving workflow](http://www.paradisec.org.au/wp-content/uploads/2016/07/Paradisec_ArchivingWorkflow.pdf)
     - [ELAR: instructions for depositors (pp. 1-12)](https://www.soas.ac.uk/elar/helpsheets/file122786.pdf)
   * **Class activities:** [Slides](https://mcdonn.github.io/2021-710/slides-handouts/3-data-management/3-data-management.html)
-  * **Assignments:** 
+  * **Assignments:**
   * **Additional readings:** @burnard2005metadata, @thieberger2015paradisec, @salffner2015guide, @robinson2010informed, @bowern2015linguistic [: ch. 11], @dipersio2014linguistic, @vandriem2016endangered, @bowern2010fieldwork
   
 ### Week 4 (9/17): Audio Recording
   
   * **Readings:** @margetts2011audio [: p. 13-32], @artis2014shut [: p. 183-216]
-  * **Class activities:** ([Slides](https://mcdonn.github.io/2020-710/slides-handouts/4-audio-recording/4-audio-slides.html))
-    
-  * **Assignment:** 
-    * Metadata assignment: Spreadsheet vs lameta
+  * **Class activities:** [Slides](https://mcdonn.github.io/2020-710/slides-handouts/4-audio-recording/4-audio-slides.html)
+  * **Assignments:** 
+    * Metadata assignment: [Spreadsheet vs lameta](https://laulima.hawaii.edu/x/g1HUnT)
     * [CITI certificate training](https://researchcompliance.hawaii.edu/programs/human-studies/hs-training/) for ***"Non-Exempt Social or Behavioral Sciences Research"***. Submit PDF showing you completed the training on Laulima.
   * **Additional readings:** @nathan2008minding [: section 4], @bowern2015linguistic [: section 2.2]
   

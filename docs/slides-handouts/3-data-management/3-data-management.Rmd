@@ -10,6 +10,16 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+
+---
+class: center, middle
+
+# Class to do list
+
+  1. Sign up for mini-presentation #1
+  2. Audio-recorders
+  3. Anything else?
+
 ---
 class: center, middle
 
