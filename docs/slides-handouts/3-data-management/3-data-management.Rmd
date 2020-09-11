@@ -58,12 +58,12 @@ class: center, middle
 
 We'll consider two ways of organizing metadata. 
   
-  1. Spreadsheet [Kaipuleohone](/../3-metadata-archiving/kaipuleohone-depositor-metadata.xls)
+  1. Spreadsheet [Kaipuleohone](../2021-710/slides-handouts/3-metadata-archiving/kaipuleohone-depositor-metadata.xls)
   2. Database 
     - [lameta](https://github.com/onset/lameta/releases) for Mac, PC 
     - [SayMore](https://software.sil.org/saymore/) for PC
 
-Let's take a quick tour of 
+Let's take a quick tour of **lameta**
 
 
 ---
