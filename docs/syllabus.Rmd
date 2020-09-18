@@ -236,10 +236,10 @@ If you have a disability for which you need accommodations in this class or any 
 
 ### Week 5 (9/24): Video Recording
 
-  * **Readings:** @seyfeddinipur2011reasons [: section 6.4], @artis2014shut [: p. 35-83, 113-182]
+  * **Readings:** @seyfeddinipur2020keeping, @seyfeddinipur2011reasons [: section 6.4], @artis2014shut [: p. 35-83, 113-182]
   * **Class activities:** 
     - [Slides](https://mcdonn.github.io/2020-710/slides-handouts/5-video-recording/5-video-recording.html)
-  * **Assignment:** Group audio recording assignment
+  * **Assignment:** Audio recording assignment
   * **Additional readings:** @dimmendaal2010language [: p. 33-53] and @margetts2011audio
 
 ### Week 6 (10/1): Video conversion 
