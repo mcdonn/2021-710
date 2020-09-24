@@ -238,13 +238,13 @@ If you have a disability for which you need accommodations in this class or any 
 
   * **Readings:** @seyfeddinipur2020keeping, @seyfeddinipur2011reasons [: section 6.4], @artis2014shut [: p. 35-83, 113-182]
   * **Class activities:** 
-    - [Slides](https://mcdonn.github.io/2020-710/slides-handouts/5-video-recording/5-video-recording.html)
+    - [Slides](https://mcdonn.github.io/2021-710/slides-handouts/5-video-recording/5-video-recording.html)
   * **Assignment:** Audio recording assignment
   * **Additional readings:** @dimmendaal2010language [: p. 33-53] and @margetts2011audio
 
 ### Week 6 (10/1): Video conversion 
 
-  * **Readings:** Read over [ELAR video conversion handout](https://www.soas.ac.uk/elar/helpsheets/file120820.pdf) to get an ideo of how complex video conversion can be
+  * **Readings:** Read over [ELAR video conversion handout](https://www.soas.ac.uk/elar/helpsheets/file120820.pdf) to get an idea of how complex video conversion can be
   * **Class activities:** ([slides](https://mcdonn.github.io/2020-710/slides-handouts/6-video-editing/6-video-editing.html), [practice](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/6-video-editing/practice.md))
   * **Assignment:** Group video recording assignment    
     
