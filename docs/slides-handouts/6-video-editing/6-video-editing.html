@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Video editing for language documentation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Leah Pappas &amp; Bradley McDonnell" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Video editing for language documentation
+### Leah Pappas &amp; Bradley McDonnell
+### 2020/09/30 (updated: 2020-09-30)
+
+---
+
+
+
+
+# Overview
+
+1. Understanding video files: Codecs &amp; Containers
+
+1. Brief intro to current video editing practices in language documentation. 
+
+1. Introduce Adobe Premiere
+
+1. Walk through example of file editing.
+
+&lt;!--
+# Understanding AVCHD video Files
+
+.center[
+
+![AVCHD](https://videoconverter.wondershare.com/images/en/ts/understanding-the-avchd-file-structure-1.jpg)
+
+  .caption[
+    **Fig. 1:** AVCHD File Structure
+  ]
+]
+
+--&gt;
+
+---
+
+# Understanding video files
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/WpBjGUlBTHU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/embed/WpBjGUlBTHU"&gt;Codecs &amp; Containers&lt;/a&gt;
+
+---
+
+&lt;!--
+
+- Containers
+  - Contain all information about a video file: video, audio, metadata
+  - Popular containers: MPEG-4 (.mp4), AVCHD (.mts), QTFF (.mov)
+
+- Codecs
+  - Way to compress or decompress (code or decode) data
+  - Data is compressed for storage and decompressed when a video is played
+  - Popular codecs: H.264 (for .mp4 files), MPEG-2 (for .mts files) ProRes (Apple proprietary)
+
+
+- Lossless vs. lossy
+
+  - Lossless: a method of data encoding that allows the original data to be completely reconstructed upon decompression
+    - Lossless audio codecs: .wav, .aiff
+  - Lossy: a method of data encoding that only saves the essential information in order to reduce file size
+    - Lossy audio codecs: .mp3, .aac
+--&gt;
+
+
+
+# Video editing in language documentation
+
+- Why do we need to edit videos?
+  
+  - To create archive-ready video into a single high-quality file
+  
+  - To export videos into accessible and/or shareable file types
+  
+  - To sync video and audio that were created using a dual system method
+
+- There is no established workflow for video
+ 
+  - But some archives have created methods (see especially [ELAR](https://www.soas.ac.uk/elar/helpsheets/))
+
+- There is no all-encompasing free open-source video editing software (e.g., Audacity for video)
+
+---
+
+class: left
+
+# What is Adobe Premiere?
+
+- A non-linear video editing system
+
+  - Acts as a middle man between the original and edited files
+
+- It does not alter the original file
+   
+- Many, many video professionals use Adobe Premiere
+
+
+---
+
+class: left
+# Workflow
+
+1. Upload files (audio and video)
+  - For AVCHD video, upload the highest level folder (usually named "PRIVATE") 
+  - ... and ***don't*** rename the file! 
+  - simply place it in a folder that is properly named
+
+1. Align audio and video (in Premiere)
+  
+1. Trim files (in Premiere)
+
+1. Choose export settings (in Premiere)
+
+1. Export (in Media Encoder)
+
+---
+
+class: center, middle, inverse
+# Let's practice!
+
+---
+
+# To learn more about Adobe Premiere...
+# [check out these Premiere tutorials](https://helpx.adobe.com/premiere-pro/tutorials.html)
+
+---
+
+# (Free) video editing software
+- [Hitfilm](https://fxhome.com/express)
+  - Confusing download
+- [Openshot](https://www.openshot.org/download/)
+  - No way to align audio and video (must do it manually)
+- [Lightworks](https://www.lwks.com/index.php?option=com_lwks&amp;view=download&amp;Itemid=206)
+  - Not intuitive.  
+  - Can’t export to high-quality formats (highest is 720)
+- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) &lt;- personal favorite!
+  - Super slow export
+  - Not intuitive
+- [Handbrake](https://handbrake.fr/downloads.php) (file conversion software)
+  - Only converts to .mkv and .mp4
+
+&lt;!--
+
+# All this technical stuff confusing?
+
+Check out youtube!
+
+.center[
+
+![My image](https://images-na.ssl-images-amazon.com/images/I/41BDdONNYGL._SX328_BO1,204,203,200_.jpg)
+
+.caption[
+**Fig. 2:** This book may be useful in teasing these apart
+]
+
+]
+
+--&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
