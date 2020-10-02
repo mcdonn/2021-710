@@ -248,7 +248,20 @@ If you have a disability for which you need accommodations in this class or any 
   * **Class activities:** ([slides](https://mcdonn.github.io/2021-710/slides-handouts/6-video-editing/6-video-editing.html), [practice](https://github.com/mcdonn/2021-710/blob/master/docs/slides-handouts/6-video-editing/practice.md))
   * **Assignment:** Group video recording assignment    
     
-### Week 7 (10/8): FLEx I
+
+### Week 7 (10/8): ELAN I
+
+  * **Readings:** @berez2007review, Read through [Third Party Resources](https://archive.mpi.nl/tla/elan/thirdparty#documentation) and pick one or two to read through.
+  * **Assignment:** Video conversion
+  * **Additional readings:** 
+  
+### Week 8 (10/15): ELAN II
+
+  * **Readings:** TBD
+  * **Assignment:**
+  * **Additional readings:**
+
+### Week 9 (10/22): FLEx I
 
   * **Readings:** Selected [online training modules](https://vimeo.com/channels/fieldworks) below:
     - [Quick tour of Fieldworks Language Explorer, FLEx](https://vimeo.com/channels/fieldworks/111419885)
@@ -263,7 +276,7 @@ If you have a disability for which you need accommodations in this class or any 
   * **Class activities:** [handout](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/7-flex/7-flex-intro.pdf)
   * **Additional readings:** 
 
-### Week 8 (10/15): FLEx II
+### Week 10 (10/29): FLEx II
 
   * **Readings:** @bow2003general, [Leipzig Glossing Rules](http://www.eva.mpg.de/lingua/resources/glossing-rules.php)
   * **Assignment:** 
@@ -274,19 +287,6 @@ If you have a disability for which you need accommodations in this class or any 
       - Interlinearization
       - Parsing & Concordance
     - [Slides](https://mcdonn.github.io/2020-710/slides-handouts/7-flex/7-training-indonesia.html)
-
-### Week 9 (10/22): ELAN I
-
-  * **Readings:** @berez2007review
-  * **Assignment:** FLEx Assignment
-  * **Additional readings:** 
-  
-### Week 10 (10/29): ELAN II
-
-  * **Readings:** TBD
-  * **Assignment:**
-  * **Additional readings:**
-
 
 ### Week 11 (11/5): FLEx-ELAN
 
