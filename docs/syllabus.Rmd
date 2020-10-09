@@ -253,6 +253,7 @@ If you have a disability for which you need accommodations in this class or any 
 
   * **Readings:** @berez2007review, Read through [Third Party Resources](https://archive.mpi.nl/tla/elan/thirdparty#documentation) and pick one or two to read through.
   * **Assignment:** Video conversion
+  * **Class activities**: [slides](https://mcdonn.github.io/2021-710/slides-handouts/07-elan/elan-intro-slides/elan-intro.html)
   * **Additional readings:** 
   
 ### Week 8 (10/15): ELAN II
