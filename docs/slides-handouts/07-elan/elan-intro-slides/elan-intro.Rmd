@@ -1,0 +1,318 @@
+---
+title: "Time-aligned transcriptions with ELAN"
+author: "Bradley McDonnell"
+date: "2020/10/08 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE, eval=TRUE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+# Goals
+
+  1. Navigate ELAN files
+  2. Produce/edit annotations in ELAN
+  3. Create/edit tiers in ELAN
+  4. Conceptualize/annotate your own recordings
+
+![](img/ELAN256.png)
+
+---
+# What is a time-aligned transcript?
+
+  1. Time-aligned transcriptions match:
+      - sections of text **(ANNOTATIONS)** to
+      - pieces of audio and/or video recordings **(MEDIA)**
+      
+---
+# What is a time-aligned transcript?
+
+![](img/waveform1.png)
+.pull-left[
+
+|<!-- -->      |<!-- -->        |
+|:-------------|:---------------|
+| **Jack:**    | Hola.          |
+| **Kristen:** | Hey!           |
+| **Jack:**    | How's it going?|
+| **Jake:**    | Good.         ||
+
+]
+
+.pull-right[
+<audio controls>
+<source src="audio/waveform-audio-1.wav" type="audio/wav">
+</audio>
+
+]
+
+
+---
+# What are some common time-aligned transcriptions? 
+
+--
+
+  1. closed captioning
+  2. subtitles
+  3. ...
+  
+---
+# Why bother?
+
+  1. **Your language resources will be much richer!** Your resources ...
+    * are searchable
+    * are verifiable 
+    * reinforce your language as a living language
+    * match orthography to pronunciation
+    * allow for the creation of other resources
+    * ... 
+
+---
+# what is ELAN?
+
+### ELAN is a tool for producing time-aligned transcripts of audiovisual recordings.
+
+  * Developed & maintained by the Max Planck Institute for Psycholinguistics in Nijmegen. 
+  * ELAN stands for **E**UDICO **L**inguistic **An**notator.
+  * EUDICO stands for the **Eu**ropean **Di**stributed **Co**rpus Project.
+  * It is developed alongside a number of other software tools that work in concert with ELAN (i.e., Arbil for metadata & Lexus for lexical databases).
+
+---
+# Why use ELAN?
+
+### ELAN uses non-proprietary, standards-compliant output.
+  * It uses **unicode** so that your fonts display correctly.
+  * It uses **XML** so that your document is long-lasting and archive ready. It conforms to well documented XML schema and is human eyeball-readable.  
+  * ELAN documents can be exported to a wide range of useful products for a wide range of audiences.        
+    * ELAN can be exported as a subtitled video for communities.
+    * ELAN can also be exported to Praat, FLEx, Subtitled text, etc. for linguists.
+
+
+---
+# How is ELAN better than a printed transcript?
+
+  * There are many uses for printed transcripts.
+  * In the past, the printed transcript was considered the primary source:
+    * Whatever the printed transcript could not capture was not included in the discussion.
+    * An accompanying recording was just considered to be an added bonus.
+  * In ELAN the text \& the recording are **unified**
+    * This opens up a number of possibilities for research & learning.
+  * The printed transcript is one of the many possible exports in ELAN.
+
+---
+# Some foundational concepts
+
+To use ELAN effectively, you must understand:
+
+  1. Your own goals for the structure of your transcript.
+  2. ELAN's built in concepts about different kinds of annotations.
+  3. How your goals maps onto ELAN's concepts.
+
+With this in mind, let's ask ourselves:
+
+  > What kind of information do I want in my time-aligned transcript?
+
+
+**Let's consider what we see in some printed transcripts...**
+
+---
+# Transcript: Single language w/ one speaker
+
+[((JAY-Z Fresh Air Interview))](http://www.npr.org/2010/11/16/131334322/the-fresh-air-interview-jay-z-decoded)
+
+> "Well I had a - I grew up in the Marcy Projects in Brooklyn, and my mom and pop had an extensive record collection. So Michael Jackson and Stevie Wonder, and all those sounds and souls - and Motown etc., etc. - filled the house. So I was very familiar with the song when Kanye bought me the sample. It was just such an interesting and fresh take on it that I immediately was drawn to it."
+
+-- 
+
+**Simple transcription system**
+
+---
+# Transcript: Single language w/ multiple speakers
+
+  * Prosodic phrasing
+  * Speaker overlap
+  * Pause length
+  * Laughter & other non-language oral noises
+  * Phrase accent/stress
+
+**The following example is in the UCSB Discourse Transcription system, which we'll be learning next month**
+
+---
+# Transcript: Single language w/ multiple speakers
+.pull-left[
+<img src="img/TwoSpeaker.png" width="300px"/>
+]
+
+.pull-right[
+<audio controls>
+<source src="audio/TwoSpeaker.mp3" type="audio/mp3">
+</audio>
+]
+
+
+
+<!--
+![](img/TwoSpeaker.png){width=600px height=200px}
+-->
+
+---
+# Transcript: Two languages w/ single speakers
+
+((Polygamous Marriage, Shona))
+![](img/TwoLanguage.png)
+<audio controls>
+<source src="audio/TwoLanguage.wav" type="audio/wav">
+</audio>
+
+---
+# Transcript: Two languages w/ single speakers (full IGT)
+
+  * Subject language
+  * Translation language
+  * Prosodic phrases
+  * Morphemes
+  * Morpheme glosses
+  * Sentence level translations
+
+---
+# Transcript: Two languages w/ single speakers (full IGT)
+
+<audio controls>
+<source src="audio/FullIGT.wav" type="audio/wav">
+</audio>
+
+((Guava, Besemah))
+![](img/FullIGT.png)
+
+---
+# ELAN's Tiers
+
+A **tier** is everything from a transcript that is the same kind of information.
+
+  * everything that Jay-Z said in example 1.
+  * everything that Jack said in example 2. 
+  * everything labeled Intonation Unit (or Gloss, etc.) in example 3.
+
+
+---
+# Tiers
+
+With printed transcripts we are forced to put different parts of a single tier on different lines.
+
+|        |      |
+|--------|------|
+| Tier 1 | ...  |
+| Tier 2 | ...  |
+| Tier 3 | ...  |
+|        |      |
+| Tier 1 | ...  |
+| Tier 2 | ...  |
+| Tier 3 | ... ||
+
+
+---
+# Tiers
+
+With a time-based tool like ELAN, we can conceive of each tier as existing...
+
+  * as a **continuous** stream on a single line,
+  * **contiguous** to the timeline of the media.
+  
+![](img/tiers1.png)
+
+---
+# Tiers
+
+With multiple continuous tiers, we can capture overlap between speakers.
+
+![](img/overlap.png)
+
+---
+# Tiers
+
+By conceiving of tiers as progressing forward through time, we can begin to establish some relationships between different tiers. 
+
+* The parent-child relationship between tiers:
+
+|               |                                                                         |
+|---------------|-------------------------------------------------------------------------|
+| **Parents:**  | tiers that control the behavior of other (child) tiers in some way.     |
+| **Children:** | tiers that are associated with and dependent upon other (parent) tiers. |
+
+  * This parent-child relationship is recursive, 
+    * a child of one tier could be the parent of another tier.
+  * Certain changes to parent tiers will affect child tiers. 
+
+---
+# Tiers
+
+Top-level parent tiers are directly associated to the recording.
+
+  * In many cases, this top-level tier is a direct representation of the media (but not always).
+  * Every ELAN file **must** have at least one of these tiers.
+
+![](img/tiers.png)
+
+---
+# Types
+
+The precise relationship between a parent & a child tier is defined in ELAN by **linguistic types**.
+
+  * The linguistic type is determined by the kind of data a tier contains:
+
+    * Utterances 
+    * Translations
+    * Linguistic analysis
+    * ...
+
+* The linguistic type usually determines a one-to-one or one-to-many relationship between the parent & child tier.
+* There are some restrictions on what linguistic types can be parent tiers.
+
+
+---
+# Types (stereotypes) vs. Tiers
+
+  1. Every tier is assigned to a linguistic type
+  2. The linguistic type specifies the stereotypical constraints of that tier
+
+--
+
+The **default** stereotypes is...  
+![](img/default.png)
+
+---
+# Types (stereotypes) vs. Tiers
+
+![](img/stereotypes.png)
+
+
+--- 
+# Types
+
+Pop quiz on the Types in ELAN:
+
+  * What **type** would you create for a *Free Translation* tier?
+  * What **type** would you create for a *Word* tier?
+  * How could you use the *Included In* **type**?
+  * Could you use the *Time Subdivision* **type** for gestures?
+  
+---
+# Summary
+
+ELAN is ubiquitous in language documentation. 
+  * I recommend you learn it and use it in your work as much as you can.
+  * Don't rely on just on me, there are lots of materials out there: 
+    * e.g., ELAN manual [http://www.lat-mpi.eu/tools/elan/](http://www.lat-mpi.eu/tools/elan/)
+
+---
+# Let's take a brief tour... 
+
+  

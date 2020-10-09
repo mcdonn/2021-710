@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Course Overview}{1}{0}{1}
+\beamer@sectionintoc {2}{nuts \& bolts}{6}{0}{2}
+\beamer@sectionintoc {3}{Introduction to ELAN}{6}{0}{3}
+\beamer@sectionintoc {4}{ELAN basics}{46}{0}{4}
+\beamer@sectionintoc {5}{Types}{90}{0}{5}
+\beamer@sectionintoc {6}{Types}{110}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{121}{0}{7}
