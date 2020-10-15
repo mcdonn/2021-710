@@ -1,0 +1,166 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\pagestyle{fancy}
+\usepackage[labelformat=empty]{caption}
+
+\fancyhf{}
+\fancyhfoffset[R]{3pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\geometry{margin=1in}
+\lhead{\fontsize{10}{12} \selectfont LING710}
+\rhead{\fontsize{10}{12} \selectfont ELAN 1: Exercise 4}
+%\chead{\fontsize{10}{12} \selectfont CoLang 2012}
+
+\begin{document}
+\begin{center}
+\section*{Exercise 4\symbolfootnote[1]{This worksheet is closely follows one made by Andrea Berez \& Christopher Cox. They have kindly given me permission to recreate it with my own (minor) changes.}\\Creating a two-language transcript with interlinearized glossed text (IGT)}
+\end{center}
+
+\subsection*{Goals:}
+In this exercise, we will learn to make an ELAN file for IGT. This is the most complicated structure we've seen so far, but it's only a small conceptual leap away from the two-language basic annotation we created yesterday. We will use a recording of the Kannada language with the following structure for our IGT (structures may vary for your own project):
+\begin{itemize}
+\item[] Tier 1: Kannada sentences (normative sentences)
+\item[] Tier 2: Kannada intonation units (prosodic phrases)
+\item[] Tier 3: Kannada words by morphemes (words with hyphens to show morpheme boundaries)
+\item[] Tier 4: English morpheme glosses
+\item[] Tier 5: English free translation of the entire Kannada sentence.
+\end{itemize}
+
+\noindent Today's files are found in the folder called \texttt{`kan-pear-story'}.
+\subsection*{Step one: Create a new ELAN file.}
+
+\begin{enumerate} 
+\item Follow the directions from the last exercise for creating a new ELAN file, but use today's audio file: \texttt{`kan-pear-story.wav'}.
+\end{enumerate}
+
+\noindent Before beginning to define linguistic types and tiers, let's take a moment to think about what types we'll need for the tiers listed above.
+
+\begin{description}
+\item[Tier 1:] This will be a top-level parent tier, linked directly to the audio stream. It will contain a transcription of the actual utterances found in the recording, and they will be the size of a sentence.
+\item[Tier 2:] This tier will also contain transcriptions of the actual utterances in the recording, but they will be in smaller units than the first tier (i.e., subdivisions of the first tier). This tier is a child of Tier 1, because we want to show that the intonation units are subparts of the sentences. However, it will also be a parent tier to the tiers below it (because we will want to show that the items in the next tier, words and morphemes, are subparts of the intonation unit). This tier is also linked to the timeline is the sense that you can click on a single intonation unit and hear that part of the audio stream.
+\item[Tier 3:] This tier is not linked to the timeline (you couldn't click and hear just a single word or morpheme)\footnote{It's not that you could never do this with words or morphemes, it's just that here we're going to set it up so that you can't just hear a single morpheme by clicking on the annotation. You could certainly set it up that way if you wanted to! and a type called `translation' for the two tiers that contain translations (both morpheme glosses and the sentence-level free translation). Notice that we can use the same type for two different tiers.}; rather, it's a child of Tier 2. Its contents are subdivisions of Tier 2.
+\item[Tier 4:] This tier is a child of Tier 3, and contains a one-to-one translation of the items in its parent (a morpheme-by-morpheme gloss).
+\item[Tier 5:] This tier is a translation of, and thus a child of, Tier 1.
+\end{description}
+
+\subsection*{Step two: Define linguistic types.}
+For this file we need four linguistic types. You are already familiar with the first two: a type called `text' for the top-level parent tier, the one containing the Kannada sentences; and a type called `translation' for the two tiers that contain translations (both morpheme glosses and the sentence-level free translation). Notice that we can use the same type for two different tiers.
+
+\begin{enumerate}
+\item Follow the instructions in the previous exercises to create these two types.
+You will also need two more types, and they are conceptually similar--they are both for tiers that are subdivisions of their parents. However, ELAN handles them a little differently because one of these types is linked to the audio stream (so you can click- and-play), but the other is not.
+\item Go to \texttt{`Type'} $>$ \texttt{`Add New Linguistic Type'}
+\item The first of these two types we will make will be called `timed chunk' (go ahead and put that in the \texttt{`Type name'} box). In the \texttt{`Stereotype'} menu, select \texttt{`Time Subdivision'}. This means that the type will be used for tiers that are a subdivision of some other tier, but are still linked to the timeline. Notice that the \texttt{`Time-alignable'} check box is checked. This is correct.
+\item Click \texttt{`Add'} to add this type.
+\item The second of these two types we will make is for tiers that are subdivisions of some other tier but are not linked to the timeline. Call this type `chunk'.\footnote{Remember, these names can be anything you want, but names like `chunk' and `timed chunk' are conceptually appropriate for what they'll be used for.} In the \texttt{`Stereotype'} menu, select \texttt{`Symbolic subdivision'}. This is because we are not making timeline subdivisions, we are just creating a space to separate words and morpheme boundaries. Notice that the \texttt{`Time-alignable'} checkbox is now unchecked. This is correct. Click \texttt{`Add'} and then \texttt{`Close'}.
+\end{enumerate}
+\subsection*{Step three: Define tiers.}
+For this file we need five tiers.
+\begin{enumerate}
+\item As before, we can use ELAN's default tier as our top-level parent tier, but we should give it a better name, like `Kannada Sentence'. Please do so.
+\item Next, let's work our way down the list of tiers and set each up in turn (you could do this in any order, and the way you specify the parent/child relationships will turn out correct, but it's easier to just go from top to bottom).
+\item We need a tier for the intonation units. Add a new tier called `Intonation Units' (or
+`prosodic phrases' or something equally descriptive), fill in the \texttt{`Participant'} and \texttt{`Annotator'}, and select this tier's parent, `Kannada Sentence'. Note that ELAN suggests a Linguistic Type in the drop down menuÑit doesn't always get it right so be sure to double check. For this tier, we want to set the \texttt{`Linguistic Type'} to `timed chunk.' Click \texttt{`Add'} to create the tier.
+\item Now we need a tier for the words and morphemes. Create a new tier called `Words and Morphemes'\footnote{Do not use an ampersand (\&)! ELAN sometimes has trouble with these as they can be part of the underlying programming language.}, and set its parent tier as `Intonation Units.' Its proper Linguistic Type is `chunk' (not `timed chunk'). Click \texttt{`Add'}.
+\item Next we need a tier for the glosses of words and morphemes. Make a new tier called `Gloss', whose parent is `Words and Morphemes.' Remember that this is one of our two translation tiers, so set the Linguistic Type accordingly. Click \texttt{`Add'}.
+\end{enumerate}
+
+\begin{enumerate}
+\item Our final tier can be called something like `English Free Translation.' This tier will contain a translation of the entire Kannada sentence (not just of words or of intonation units), so its parent is `Kannada Sentence.' Its linguistic type is, of course, `translation'.
+Once you have added all your tiers, it's a good idea to check to be sure that your parent/child relationships are correct. Close the \texttt{`Add Tier'} dialog box, and then 
+\item Go to \texttt{`View'} $>$ \texttt{`Tier Dependencies'}
+\end{enumerate}
+\newpage
+% You should see a tree structure something like this:\\
+
+      \begin{figure}[h!]
+      \setlength{\unitlength}{1cm}
+      \begin{center}
+      \caption{\textbf{You should see a tree structure something like this:}}
+      \begin{picture}(5, 5)
+          % Symbolic association upper left corner
+          \put(0.5,4.35){Kannada Sentence}
+          \put(1.5,3.35){Intonation Units}
+          \put(2.5,2.35){Word and Morphemes}
+          \put(3.5,1.35){Gloss}
+          \put(1.5,0.35){English Free Translation}
+          \thicklines
+          \put(0,4.45){\line(0,1){0.75}}
+          \put(0,4.45){\line(1,0){0.5}}
+          \put(0.7,0.45){\line(0,1){3.8}}
+          \put(0.7,0.45){\line(1,0){0.7}}
+          \put(0.7, 3.45){\line(1,0){0.7}}
+          \put(1.7,2.45){\line(0,1){0.75}}
+          \put(1.7,2.45){\line(1,0){0.75}}
+          \put(2.7,1.45){\line(0,1){0.75}}
+          \put(2.7,1.45){\line(1,0){0.75}}
+       \end{picture}
+       \end{center}
+       \end{figure}
+
+\noindent This diagram shows the following information:
+\begin{itemize}
+\item `Kannada Sentence' is linked directly to the audio stream timeline
+\item `Kannada Sentence' has two immediate children: `Intonation Units' and `English Free Translation'
+\item `Intonation Units' has one immediate child: `Words and Morphemes'
+\item `Words and Morphemes' has one immediate child: `Gloss'
+\item `Gloss' and `English Free Translation' have no children
+\end{itemize}
+
+\noindent If you don't see this, you've made a mistake somewhere. Go back and fix your tier relationships.
+
+\subsection*{Step four: add annotations.}
+Now we are going to add our annotations, working with the transcription in today's file, \texttt{kan-pear-story.txt}.
+
+\begin{enumerate}
+\item Start with the first Kannada sentence, and add the annotation by listening, selecting,
+and double clicking just like in the previous exercises.
+\item Now we want to divide this sentence into time-based intonation units. First double click in the `Intonation Unit' tier directly below the annotation for the first full sentence. A text box opens up that is just as long as its parent. Go ahead and type the words from just the first intonation unit into that box, and then type \texttt{Control-Enter} to make it stick.
+\item Now we want to keep adding intonation units--there are five for this first sentence. So here's what you will do for each new intonation unit:
+\begin{enumerate}
+\item click on the horizontal line containing your first intonation unit so that the line itself turns blue
+\item right-click on that blue line, and select `\texttt{New Annotation After}'. A new text box will open up to the right of the first one.
+\item Add the text for the second intonation unit and type \texttt{Control-Enter}.
+\item Now you want to move the vertical separation line in between the units so that it lines up with the correct point in the wave form where the first unit ends and the second unit begins. Click either of the two intonation units so that the horizontal line turns blue. Now, press the \texttt{ALT} key, and while pressing it, use the mouse to pick up the vertical separation bar and drag-and-drop it where you want the new division to be.
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\item Repeat this process until you have added all the intonation units for your first Kannada sentence. Notice that by selecting a single intonation unit, you can press Play and hear just that unit.
+\end{enumerate}
+
+\noindent Next we want to add annotations to the `Words and Morphemes' tier (for the sake of this exercise, put each word with its morphemes into a single annotation; for example, the entire word haNN-iNA will all go into one annotation box).
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item To add your first word, double click on the `Words and Morphemes' tier directly below the first intonation unit. A text box that is the same length as the intonation unit above will open up.
+\item Type in your first word, and then hit Control-Enter.
+\item To add additional words, you will do nearly the same thing you did when you added intonation units (selecting the word so that the horizontal line is blue, clicking `\texttt{New Annotation After}', etc.). The difference is that you won't be able to pick up the vertical separation line and move it. Instead, because we used the `\texttt{Symbolic Subdivision}' type for this tier, ELAN divides the area into equally-sized units.
+\item Continue until you have added all the words for each intonation unit.
+\item Next you'll add annotations to the `Gloss' tier by double clicking directly below each word. ELAN won't allow you to `\texttt{Add Annotation After}' in this tier because of the properties of this tier's type. Continue to add glosses to all your words and morphemes.
+\item Finally, you can add annotations to the `English Free Translation' tier. Notice that when you double click, the text box is as long as its parent (`Kannada Sentences'), and not as long as the tier that is physically above it (`Gloss').
+\item Now go through the entire file and add all the transcriptions. You'll get faster as you practice!
+\end{enumerate}
+
+\subsection*{If you finish early, read in the ELAN manual about the following things:}
+
+\begin{itemize}
+\item there is one linguistic stereotype we haven't used--it's called `\texttt{Included In}'. What is the difference between this and `\texttt{Time Subdivision}'?
+\item read about tokenizing tiers. How can this help you in annotating IGT?
+\end{itemize}
+
+\subsection*{Questions to think about:}
+You could go even further with your IGT. For example, you could have a tier that puts each underlying morpheme in a separate annotation (good for fusional languages). How would you do this?
+
+\subsubsection*{What would you do if you had more than one speaker in your recording?}
+If you want to make a tier that contains metacommentary (notes to yourself, for example), how would you configure it? What kind of linguistic type would you use?
+\end{document}

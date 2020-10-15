@@ -1,0 +1,101 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\pagestyle{fancy}
+\usepackage[labelformat=empty]{caption}
+
+\fancyhf{}
+\fancyhfoffset[R]{3pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\geometry{margin=1in}
+\lhead{\fontsize{10}{12} \selectfont LING710}
+\rhead{\fontsize{10}{12} \selectfont ELAN 2: Exercise 4 (continued)}
+%\chead{\fontsize{10}{12} \selectfont CoLang 2012}
+\cfoot{\thepage}
+
+\begin{document}
+\begin{center}
+\section*{Exercise 4 (continued)\\Creating a two-language transcript with interlinearized glossed text (IGT)}
+\end{center}
+
+\subsection*{Goals:}
+Now that we have created an IGT manually, let's look at a more automated way to do this in ELAN. This involves learning two new commands in ELAN: 
+
+  \begin{itemize}
+    \item \texttt{Tokenize tier}
+    \item \texttt{Copy tier(s)}
+  \end{itemize}
+
+\noindent These two commands will help you to create an IGT much faster!
+
+\subsection*{Step 1: Open the file \texttt{kan-pear-story-tokenized.eaf}}
+I have already prepared the ELAN file \texttt{kan-pear-story-tokenized.eaf} for you. \\
+
+\noindent (NOTE: You may need to re-link the annotation file to the sound file: \texttt{kan-pear-story.wav}; ELAN will prompt you to find the file if the program cannot locate it. Simply choose the file and click \texttt{OK}).\\
+
+\noindent You will notice that the file has all the same \texttt{types}, but not all of the same \texttt{tiers} that we created in exercise 4. We will add the necessary \texttt{tiers} in steps 2 \& 3. 
+
+\subsection*{Step 2: Create the \texttt{Words and Morphemes} tier with \texttt{Tokenize tier\ldots}}
+\texttt{Tokenize tier} is option in ELAN that: 
+  \begin{itemize}
+    \item copies one tier, and 
+    \item creates a new tier with new subdivided annotations
+  \end{itemize}
+
+\noindent In order to tokenize a tier, take the following steps:
+  \begin{enumerate}
+    \item Go to \texttt{Tier} $>$ \texttt{Tokenize tier\ldots}
+    \item A dialogue box opens up with a number of options. For now, select your `\texttt{Source tier}', (which is \texttt{Intonation Unit} here). 
+    \item Since you don't have a \texttt{Words and Morphemes} tier, you need to create one. Click `\texttt{Create new tier\ldots}'.
+    \item By now you should be familiar with this dialogue box, so create a tier and name it `\texttt{Words and Morphemes}'. Before you click `\texttt{Add}', take a moment to think about what the parent tier you should choose and what \texttt{type} you should choose. It may be helpful to choose the parent tier first, then choose the type of the tier. Once you have filled in the relevant info, click `\texttt{Add}' \& `\texttt{Close}'.
+    \item You should now see \texttt{Words and Morphemes} in the `\texttt{Destination tier}' drop down menu. Keep the rest of the options in the Tokenize tier dialogue box as is and click `\texttt{Start}'.
+  \end{enumerate} 
+ 
+\subsection*{Step 3: Create the \texttt{Gloss} tier with \texttt{Copy tier}}
+Instead of creating new annotations for each annotation on the \texttt{Words and Morphemes} tier, it is much easier to use `\texttt{Copy tier\ldots}'.  
+\begin{enumerate}
+\item To do this, go to \texttt{Tier} $>$ \texttt{Copy tier\ldots}. Select \texttt{Words and Morphemes} \& click `\texttt{Next}'. \texttt{Intonation Units} will no longer be our parent tier, so click on \texttt{Words and Morphemes} as our parent tier and click `\texttt{Next}' again. Finally, this tier will be of the type `\texttt{translation}', so select this type and click \texttt{Finish}.
+\item You will now have a tier called \texttt{Words and Morphemes-cp}. Change this tier name to \texttt{Gloss}.
+\item You can now enter all of the English glosses into this line by typing over the Kannada text. However, if this is distracting to you, you can delete all of the annotations. 
+\item Go to \texttt{Tier} $>$ \texttt{Remove Annotations or Values\ldots} Then select \texttt{Gloss} and make sure to uncheck any other boxes. Leave everything else the same and click \texttt{OK}. Now the annotation values are empty, but the annotations stay the same. 
+\end{enumerate}
+
+\subsection*{Step 4: Save your tiers \& types as a \texttt{Template}}
+Now that you have gone through all the work to create a complex set of types \& tiers, it would be nice to be able to re-use this for other files. ELAN allows you to do just this.
+  \begin{enumerate}
+    \item Go to \texttt{File} $>$ \texttt{Save as Template\ldots}
+    \item Name your file something general like \texttt{kan-narrative-template}.
+    \item Your file is now saved as an \texttt{.etf} extension (ELAN Template file).
+    \item Try creating a new file with this template file\ldots
+  \end{enumerate}  
+
+\subsection*{Further steps\ldots}
+\begin{enumerate}
+\item What if you wanted to have a separate Morphemes tier?
+\item How might you go about this? 
+\item What if you wanted to add another speaker? 
+\item Is there a quick way to go about this?
+\end{enumerate}
+
+ %\subsection*{Step 3: Create morpheme breaks \& Tokenize tier\ldots (again)}
+%Now that you have a \texttt{Words} tier, let's create a \texttt{Morphemes} tier.
+
+%  \begin{enumerate}
+%    \item Before creating a words tier, we want to make a copy of our \texttt{Words} tier. To do this, go to \texttt{Tier} $>$ \texttt{Copy tier\ldots}. Select \texttt{Words} \& click \texttt{`Next'}. \texttt{Intonation Units} will still be our parent tier, so go ahead \& click \texttt{`Next'} again. Finally, this tier will be of the type \texttt{`chunk'}, so click \texttt{Finish}.
+%    \item You now should have two tiers: \texttt{Words} \& \texttt{Words-cp}. You can keep these names because you will eventually delete \texttt{Words-cp}. On the \texttt{Words-cp} tier, go through the annotations \& add dashes (-) to different morpheme breaks. Please use the \texttt{KAN-Pear-Story.txt} file to do so. 
+%    \item Once you have all the morpheme breaks in place, you can tokenize the \texttt{Words-cp} tier \& create a \texttt{Morphemes} tier.
+%    \item Follow the same steps as above in Step 2. Select \texttt{Words-cp} as the \texttt{`Source tier'} \& create a new tier \texttt{Morphemes} as your \texttt{`Destination tier'}. What type should \texttt{Morphemes} be? 
+%  \end{enumerate}
+
+   
+
+
+\end{document}

@@ -5,3 +5,5 @@
 *.wav
 *.mp4
 *.zip
+*.prproj
+PRIVATE/

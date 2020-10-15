@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2012-10-22T15:35:41-08:00" FORMAT="2.7" VERSION="2.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.7.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///Users/BJM/Documents/Teaching/CoLang_2012_ELAN/CoLang_ELAN1/ELAN1_Ex4_KanPearStory/Ex4/KAN-Pear-Story/KAN-Pear-Story.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="file:/./KAN-Pear-Story.wav"/>
+        <PROPERTY NAME="lastUsedAnnotationId">20</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="190"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="1650"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="2200"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="2470"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="3550"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="4540"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="6630"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="7580"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="7880"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="10172"/>
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="11424"/>
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="13186"/>
+        <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="14138"/>
+        <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="17100"/>
+        <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="17660"/>
+        <TIME_SLOT TIME_SLOT_ID="ts16"/>
+        <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="21900"/>
+    </TIME_ORDER>
+    <TIER ANNOTATOR="Bradley McDonnell" DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="text" PARTICIPANT="Keshava Subramanya" TIER_ID="Kannada Sentece">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>Kathe shuruvaadaaga, um, ii haNNina maali maravannu hatti, aa, maavina haNNugaLanna udaristirtaane.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts14">
+                <ANNOTATION_VALUE>Aa, ondondaagi haNNugaLanna togoNDu, avana kattalliruva ondu, batteyinda oresi adanna, aa, joopaanavaagi ondu buTTige haaktirtaane.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts17">
+                <ANNOTATION_VALUE>Adeethara ondu buTTi purti aadameele innondu buTTige, haNNugaLanna tumbastaane.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="Bradley McDonnell" DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="timed chunk" PARENT_REF="Kannada Sentece" PARTICIPANT="Keshava Subramanya" TIER_ID="Intonation Unit">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>Kathe shuruvaadaaga,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts2" TIME_SLOT_REF2="ts3">
+                <ANNOTATION_VALUE>um,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+                <ANNOTATION_VALUE>ii,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts4" TIME_SLOT_REF2="ts5">
+                <ANNOTATION_VALUE>haNNina maali,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE>maravannu hatti,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts6" TIME_SLOT_REF2="ts7">
+                <ANNOTATION_VALUE>aa maavina haNNugaLanna,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>udaristirtaane.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+                <ANNOTATION_VALUE>Aa, ondondaagi haNNugaLanna togoNDu,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts10" TIME_SLOT_REF2="ts11">
+                <ANNOTATION_VALUE>avana kattalliruva ondu,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+                <ANNOTATION_VALUE>batteyinda oresi adanna,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts12" TIME_SLOT_REF2="ts13">
+                <ANNOTATION_VALUE>aa,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+                <ANNOTATION_VALUE>joopaanavaagi ondu buTTige haaktirtaane.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+                <ANNOTATION_VALUE>Adeethara ondu buTTi purti aadameele innondu buTTige,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts16" TIME_SLOT_REF2="ts17">
+                <ANNOTATION_VALUE>haNNugaLanna tumbastaane.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="Bradley McDonnell" DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="translation" PARENT_REF="Kannada Sentece" PARTICIPANT="Keshava Subramanya" TIER_ID="English Free Translation">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a18" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>When the story starts, this fruit farmer, having climbed the tree, is in the state of picking the mango fruits.		
+</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a19" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>He takes the fruits one by one and wipes them with a cloth, which is around his neck, then he carefully puts it (the fruit) into a basket.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a20" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>Similarly, once a basket is full, he fills the fruits into another basket (he fills another basket with fruit).</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="text" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="translation" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="timed chunk" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="chunk" TIME_ALIGNABLE="false"/>
+    <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

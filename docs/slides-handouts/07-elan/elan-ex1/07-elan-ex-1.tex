@@ -1,0 +1,116 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhfoffset[R]{3pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\geometry{margin=1in}
+\lhead{\fontsize{10}{12} \selectfont LING710}
+\rhead{\fontsize{10}{12} \selectfont ELAN 1: Exercise 1}
+%\chead{\fontsize{10}{12} \selectfont Discourse Transcription}
+\cfoot{\fontsize{10}{12} \selectfont \thepage}
+
+\begin{document}
+\begin{center}
+\section*{Exercise 1\symbolfootnote[1]{This worksheet closely follows one made by Andrea Berez \& Christopher Cox. They have kindly given me permission to recreate it with my own (minor) changes.}\\Creating a single-language transcript with one speaker}
+\end{center}
+
+\noindent In this exercise we will make our first ELAN file using a recording of an English monologue. A one-speaker, one-language project like this one is the easiest kind of ELAN transcript to create, since we can use almost all of ELAN's default settings. We will also learn how to work with the features of the ELAN workspace.\\
+
+\noindent Today's files are found in the folder called \texttt{`eng-pear-story'}.\\
+
+\subsection*{Step one: Create a new ELAN file.}
+\begin{enumerate}
+\item Open the ELAN software.
+\item Go to \texttt{File $>$ New\ldots}
+\item Navigate to the audio file we're using today: \texttt{`eng-pear-story.wav'}. (For Mac, click on \texttt{`Add Media File\ldots'}, then navigate to the audio file we're using today: \texttt{`eng-pear-story.wav'})
+\item Highlight the audio file in the left hand box by clicking on it, then click the double arrow ($>>$) to move it over to the right hand box, under \texttt{`Selected Files'}. (Mac users will skip this step.)
+\item Click \texttt{OK}. The ELAN window will initialize for a moment and then display the waveform.
+\item Now save your file immediately. Go to \texttt{File $>$ Save}.
+\item Give your new ELAN file a name that makes sense (e.g., the same name as the audio file minus the .wav; here \texttt{`eng-pear-story'}), and click \texttt{`Save'}.
+\item Now set your automatic backup to save your file every minute so that you don't lose your work in case of a crash. Go to \texttt{File $>$ Automatic Backup $>$ 1 minute}.
+\end{enumerate}
+
+\subsection*{Step two: Add some descriptive metadata to the default tier.}
+In the Multi-tier Viewer area, you will see a tier already present, labeled `default.' ELAN provides this tier already configured to contain a text representation of the contents of the media stream. However, \texttt{`default'} isn't a very helpful name, and we should add some more information (descriptive metadata) that is specific to this tier.\\
+\newpage
+\begin{enumerate}
+\item Right click on the tier label \texttt{`default'} and select \texttt{`Change Attributes of \textit{default}'}.
+\end{enumerate}
+This opens up the \texttt{`Change Tier Attributes'} dialog box. You'll see several things in this box:
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item[]
+\begin{enumerate}
+\item an upper area that contains a list of all the tiers that are present in this file
+\item four tabs: \texttt{`Add, Change, Delete, Import'} (You're currently looking at the \texttt{`Change'} tab)
+\item Some drop down menus and input boxes.
+\end{enumerate}
+\end{enumerate}
+In the lower half of the \texttt{`Change Tier Attributes'} dialog box, do the following:
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item Change the tier name to something a little more helpful, like `text.'
+\item Insert the name of the speaker in the \texttt{Participant} box (in this case, Anna McDonnell).
+\item Insert your own name in the \texttt{`Annotator'} box.
+\item Leave everything else (\texttt{`Parent Tier'}, \texttt{`Linguistic Type'}, \texttt{`Default Language'}) alone for now. We'll learn more about these in future exercises.
+\item Click \texttt{`Change'}, which will close the dialog box and change your tier name.
+\end{enumerate}
+
+\noindent Now when you hover over the new tier label \texttt{`text'}, you should see a pop-up box with your new information.
+
+\subsection*{Step three: add annotations.}
+Now comes the fun part, adding annotations. Use the audio controllers in ELAN to listen to the transcript. You can highlight a portion of the waveform by clicking and dragging with your mouse. When you find an area that you want to annotate, highlight it--it will turn blue. Then, double click in the blue area across from the `text' tier label. A white text box will open up there. Place your cursor in the box and type the words that you hear here.\\
+
+\noindent Now you have to make the annotation ``sticks''. You'll be tempted to just press \texttt{Enter}--try it, and you'll see that it doesn't make the annotation stick, it just moves the cursor down a line.
+
+\begin{center}
+\textbf{To make your annotation ``sticks'', click \texttt{control-Enter} (Mac \texttt{cmd-Return}).}
+\end{center}
+
+\noindent Now go through the entire transcript and add annotations as you hear them.
+
+\subsection*{Step four: editing annotations.}
+If you make a mistake, you don't have to delete the entire annotation (although you can). You can move the edges around in the timeline, shift an entire annotation earlier or later, or merge it with the next annotation. You should spend some time practicing these.
+\begin{enumerate}
+\item To move one edge of an annotation either forward or backward in time.
+\begin{enumerate}
+\item Click on the annotation so that the horizontal line turns blue (it is now selected).
+\item While holding down the \texttt{ALT} key, place your cursor on the blue vertical bar at the starting or ending edge of the annotation. Click and hold them mouse, then drag the bar into the desired position.
+\end{enumerate}
+\item To move an entire annotation either forward or backward in time:
+\begin{enumerate}
+\item Like above, click on the annotation so that the horizontal line turns blue (it is now selected).
+\item While holding down the \texttt{ALT} key, place your cursor on the blue horizontal bar. Click and hold the mouse, then drag the entire annotation into the desired position.
+\end{enumerate}
+\item To merge an annotation with the following one.
+\begin{enumerate}
+\item Like above, click on the annotation so that the horizontal line turns blue (it is now selected).
+\item Right-click on the selected annotation, then choose \texttt{`Merge with Next Annotation'}. It will automatically merge both the timeline and the text of the annotation.
+\end{enumerate}
+\item To delete an annotation entirely.
+\begin{enumerate}
+\item Like above, click on the annotation so that the horizontal line turns blue (it is now selected).
+\item Right-click on the selected annotation, then choose \texttt{`Delete Annotation'}.
+\end{enumerate}
+\end{enumerate}
+
+\subsection*{Step five: Saving your file.}
+
+Don't forget to save your file when you're done. ELAN will create a few different file types that you will see in your directory:
+\begin{description}
+\item[.eaf:] this is your actual ELAN transcript file. You can double-click on this file the next time you want to work on it and it will open automatically.
+\item[.psfx:] this file contains your personal preferences about how the ELAN window should look when you open it. This file is not necessary, so if you lose it, don't worry. ELAN will create a new one automatically.
+\item[.eaf.001:] this is your temporary backup file. Again, you don't need to have this file, so don't worry if it's missing.
+\end{description}
+\end{document}

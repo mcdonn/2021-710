@@ -1,0 +1,114 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhfoffset[R]{3pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\geometry{margin=1in}
+\lhead{\fontsize{10}{12} \selectfont LING710}
+\rhead{\fontsize{10}{12} \selectfont ELAN 1: Exercise 2}
+%\chead{\fontsize{10}{12} \selectfont Discourse Transcription}
+\cfoot{\fontsize{10}{12} \selectfont \thepage}
+
+\begin{document}
+\begin{center}
+\section*{Exercise 2\symbolfootnote[1]{This worksheet closely follows one made by Andrea Berez \& Christopher Cox. They have kindly given me permission to recreate it with my own (minor) changes.}\\Creating a single-language transcript with multiple speakers}
+\end{center}
+
+\subsection*{Goals:}
+\noindent In this exercise we will make an ELAN transcript of an audio clip of a English conversation between four people: Alvin, Lea, Peter, and Allison. We will learn how to create new tiers, and begin to think about linguistic types.\\
+
+\noindent Today's files are found in the folder called \texttt{`eng-television'}.
+\subsection*{Step one: Create a new ELAN file.}
+
+\begin{enumerate}
+\item Open ELAN.
+\item Go to \texttt{File $>$ New\ldots}
+\item Navigate to the audio file we're using today: \texttt{`eng-television.wav'}. (For Mac, click on \texttt{`Add Media File\ldots'}, then navigate to the audio file we're using today: \texttt{`eng-television.wav'}.)
+\item Highlight the audio file in the left hand box by clicking on it, then click the double arrow ($>>$) to move it over to the right hand box, under \texttt{`Selected Files'} (For Mac, you can skip this step.)
+\item Click \texttt{OK}. The ELAN window will initialize for a moment and then display the waveform.
+\item Now save your file immediately. Go to \texttt{File $>$ Save}.
+\item Give your new ELAN file a name that makes sense (e.g., the same name as the audio file minus the \texttt{.wav}; here `eng-television'), and click \texttt{Save}.
+\item Your automatic backup should already be set from the previous exercise, but if not, set your automatic backup to save your file every minute so that you don't lose your work in case of a crash. Go to \texttt{File $>$ Automatic Backup $>$ 1 minute}.
+\end{enumerate}
+
+\subsection*{Step two: Define linguistic types.}
+Because we're starting to work with multiple tiers, it's a good time to start thinking about ELAN's \textbf{linguistic types}. This transcript will have four tiers, one for each of the four speakers, and they will all contain a textual representation of the actual words that are spoken on the recording. Remember that text representations of the contents of the recordings are considered to be top-level parent tiers, So, we'll need a linguistic type that is associated directly with the timeline of the audio stream. Any tiers we make using this type will be used for dividing the audio stream into time-based portions. ELAN has a default type like this already assigned when you create a new file. It's called \texttt{`default-lt'}, but let's give it a better name.
+
+\begin{enumerate}
+\item Go to \texttt{`Type'} $>$ \texttt{`Change Linguistic Type'}
+This opens up the \texttt{`Change Type'} dialog box. 
+\end{enumerate}
+\begin{itemize}
+\item[] \textbf{You'll see several things in this box:}
+\item[-] an upper area that contains a list of all the types you have defined for this file
+\item[-] four tabs: \texttt{`Add', `Change', `Delete', `Import'} 
+\item[] (You're currently looking at the \texttt{`Change'} tab)
+\item[-] Some drop down menus and input boxes.
+\end{itemize}
+
+\noindent The first drop down menu contains a list of all the types that are defined for the file--right now, it only has \texttt{`default-lt'} available.\\
+
+\noindent Below that is a text box that contains the name of your current type, the one ELAN has named `default-lt.'
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Give it a better name now: something like \texttt{`text'} (or anything else you can easily remember). When picking a name for your type, remember that you're \textsc{not} giving a name to an actual tier here. For example, it's a bad idea to call this type \texttt{`Joe's utterances'} because you can use this type for any tier that is associated directly to the audio timeline--i.e., not just Joe's utterances, but also Mary's utterances, or even Mary's individual words. Save those more specific names for your tiers.
+\end{enumerate}
+\noindent The other items in the dialog box contain some information about the behavior of this linguistic type. You'll see that the stereotype is \texttt{`None'}. This is the correct stereotype for this linguistic type (we'll talk about the other stereotypes later). The menu called \texttt{`Use Controlled Vocabulary'} can be ignored for now, as can the text box called \texttt{`ISO Data Category'} and the \texttt{`References to Graphics Allowed'} check box.\\
+\\
+\noindent Notice that the \texttt{`Time-alignable'} check box is checked. This is correct for this type, since tiers made with this type are aligned directly to the audio timeline.
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item Click \texttt{`Change'} to accept the name change to this tier. Notice that the name changes in the window at the top of the dialog box.
+\end{enumerate}
+\noindent This is the only type we need for our single-language transcript, so click \texttt{`Close'} to close the dialog box.
+
+\subsection*{Step three: Define tiers.}
+
+\noindent Today we are going to make a transcript for the television.wav audio clip. If you like, you can follow along with the pre-typed transcript by opening \texttt{eng-television.txt} in a text editor (wherein the symbol @ stands for a pulse of laughter). You'll see that we have four speakers in this transcript, so we need to create four tiers: one each for Alvin, Lea, Peter and Allison. Each of these will be a top-level parent tier, and directly associated to the audio time line. Again, ELAN gives you a default tier of the correct configuration (but only one), so we'll give it a better name and then create more tiers just like the first one for each speaker.
+
+\begin{enumerate}
+\item Go to \texttt{`Tier'} $>$ \texttt{`Change Tier Attributes'}
+\end{enumerate}
+
+\begin{itemize}
+\setlength{\itemindent}{9pt}
+\item[] \textbf{A dialog box similar to the type dialog box will open up. You will see:}
+\item[-] an upper area that contains a list of all the tiers you have defined for this file
+\item[-] four tabs: \texttt{`Add', `Change', `Delete', `Import'}
+\item[] (You're currently looking at the \texttt{`Change'} tab)
+\item[-] Some drop down menus and input boxes.
+\end{itemize}
+\vspace{6pt}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item The first drop-down menu contains all the tiers you have set up for this file (it only contains one, called `default'). Below that is an input box with the current tier's name. Let's give it a better name. Since we need a tier for each speaker, let's start by calling this tier `Alvin', named after our first speaker.
+\item The next input box is labeled \texttt{`Participant'}. Here you can type the full name of the speaker if you wish (Alvin Smith, for example). In the box labeled \texttt{`Annotator'} you can type your own name if you wish (or the name of whoever annotated this tier for you).
+\item The drop-down menu labeled \texttt{`Parent Tier'} already contains \texttt{`None'}. This is correct--remember, this is going to be a parent tier, so it has \texttt{`None'} for its parent. The menu labeled \texttt{`Linguistic Type'} already has the correct type selected, the \texttt{`text'} type that we previously defined. The \texttt{`Default Language'} menu allows you to pick a language for this tier.
+\item Click \texttt{`Change'} to accept the renamed tier. Notice that the name has changed both in the upper portion of the dialog box and in the main ELAN window.
+\item Now we have to set up three more tiers just like this one for the other speakers in our audio file. Leave the dialog box open and click on the \texttt{`Add'} tab (or, if you've closed the box, go to \texttt{`Tier'} $>$ \texttt{`Add New Tier'}).
+\item In the \texttt{`Tier Name'} box, type the name of the second speaker: Peter. Again you can type the speaker's full name in the \texttt{`Participant'} box, and your own name in the \texttt{`Annotator'} box. Leave the \texttt{`Parent Tier'}and \texttt{`Linguistic Type'} settings as they are (\texttt{`None'} and \texttt{`text'} respectively). When you've defined everything correctly, click \texttt{`Add'} to add this tier (if you make a mistake, click on the \texttt{`Change'} tab and fix it!).
+\item Now add tiers just like this for the other two speakers, Allison and Lea. Click \texttt{`Close'} to close the dialog box.
+\end{enumerate}
+\subsection*{Step four: add annotations.}
+
+\begin{enumerate}
+\item Now you can begin to add annotations for each speaker. Just like in the previous exercise, use the media controllers to listen to selected portions, and then you are ready to transcribe, double-click on a blue-highlighted area to open up a text box.
+\item Note that the multi-tier structure of ELAN allows you to overlap annotations in time whenever the recording contains overlapping speech. You may need to listen carefully for the overlaps!
+\item As you work, try to keep the edges of the annotations as close as possible to the actual beginnings and ends of the utterances you are transcribing.
+\item If you would like to cut-and-paste from the text version of the transcript, feel free. Keep in mind this is a good time-saving technique if you are working with files that have already been transcribed in a separate text editor, which you are now time-aligning in ELAN for the first time.
+\end{enumerate}
+\subsection*{Step five: save your file.}
+
+\end{document}

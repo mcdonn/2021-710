@@ -1,0 +1,78 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhfoffset[R]{3pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\geometry{margin=1in}
+\lhead{\fontsize{10}{12} \selectfont LING710}
+\rhead{\fontsize{10}{12} \selectfont ELAN 1: Exercise 3}
+%\chead{\fontsize{10}{12} \selectfont CoLang 2012}
+\cfoot{\fontsize{10}{12} \selectfont \thepage}
+
+\begin{document}
+\begin{center}
+\section*{Exercise 3\symbolfootnote[1]{This worksheet is closely follows one made by Andrea Berez \& Christopher Cox. They have kindly given me permission to recreate it with my own (minor) changes.}\\Creating a two-language basic transcript (sentence level)}
+\end{center}
+
+\subsection*{Goals:}
+\noindent In this exercise, we will learn to make a very basic two-language ELAN file. By two languages, we mean a language spoken in the audio or video recording plus a translation language (as opposed to two different languages being spoken in the recording). By basic, we mean that utterances are given at the sentence level (as opposed to being broken down into smaller units or with any kind of linguistic or analytical information).\\
+
+\noindent Today's files are found in the folder called: \texttt{`otx-tortilla-making'}.\\
+
+\subsection*{Step one: Create a new ELAN file.}
+
+\noindent Follow the directions from the previous exercises for creating a new ELAN file, but use today's audio file: \texttt{`otx-tortilla-making.wav'}.
+
+\subsection*{Step two: Define linguistic types.}
+For this file we now need two different linguistic types. The first type is for the top-level parent tier that is associated directly with the timeline.
+
+\begin{enumerate}
+\item Follow the directions from the last exercise to rename ELAN's default type to something a little nicer, like \texttt{`text'}. This will be the type we use for tiers that contain the actual words the speaker in the recording is saying.
+\end{enumerate}
+
+\noindent Now we need another type that we haven't used before. We need a type that will be used for tiers that contain translations of the content of their parent tiers. That is, we need a type whose behavior says `I'm not the actual words on the recording, but I'm a symbolic representation (i.e., not a literal representation) of the actual words (e.g., in another language) that are on the recording.'
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Go to \texttt{`Type'} $>$ \texttt{`Add New Linguistic Type'}
+\item This brings up the \texttt{`Add Type'} dialog box, which works like the other boxes we've seen. In the first input box in the lower half, insert the name of our new type, something like \texttt{`translation'}. Notice that calling this type \texttt{`translation'} means we can use it for translation of units of any size, like the sentences in this lesson, or morpheme-level glosses in the next lesson.
+\item In the \texttt{`Stereotype'} drop-down menu, select \texttt{`Symbolic Association'}. This tells ELAN essentially what was stated above, that tiers using this type are symbolic representations of the contents of their parent tiers (they are second-language translations of the actual words on the recording).
+\item Notice that the \texttt{`Time-alignable'} check-box becomes unchecked. This is correct, because this linguistic type is not associated directly to the time line of the audio stream.
+\item For now you can leave the other settings as they are (\texttt{`Use Controlled Vocabulary'} = \texttt{`None'}, \texttt{`ISO Data Category'} = blank, \texttt{`References to graphics Allowed'} = unchecked).
+\item Click \texttt{`Add'} to add this type to our list of defined types, and then click \texttt{`Close'} to close the dialog box.
+\end{enumerate}
+
+\subsection*{Step three: Define tiers.}
+\noindent For this exercise, we'll need just two tiers: one parent tier, linked directly to the timeline to contain the original language transcription, and one child tier, linked to its parent, to contain the translation. Remember that ELAN's default tier is a parent tier.
+
+\begin{enumerate}
+\item Follow the directions from the last exercise to rename the default tier. You can choose to call it `Otomi text' and set the \texttt{`Participant'} name to `Alejandra,' or you can simply name the tier `Alejandra.' Under the \texttt{`Default Language'} menu, for now you can leave `English' selected, even though the contents of this tier are Otomi and not English. This menu is used for languages with non-Roman orthographies, or for IPA symbols. We'll talk more about this menu later.
+\item Now you need to create a tier for the translation. Either click the \texttt{`Add'} tab or go to \texttt{Tier} $>$ \texttt{`Add New Tier'}.
+\item In the \texttt{`Tier Name'} box, put in a name for your translation tier. It can be something like `English translation' or `English free translation'. Now go to the \texttt{`Parent Tier'} drop-down menu. You'll see the name of your parent tier there--go ahead and select it. This tells ELAN that your `English translation' tier is a child of the tier called `Otomi text'. Notice that if you filled in a \texttt{`Participant'} name for your parent tier, it's automatically filled in for you now.
+\item Also notice that ELAN has automatically selected \texttt{`translation'} as the \texttt{`Linguistic Type'} for this tier. That is correct.
+\item Click \texttt{`Add'} to add your tier, and then click \texttt{`Close'} to close the dialog box.
+\end{enumerate}
+
+\subsection*{Step four: add annotations.}
+\noindent Adding annotations is very similar to the previous exercises.
+
+\begin{enumerate}
+\item Listen to the audio, and use the mouse to select/highlight a portion of the waveform, double-click in the blue highlighted portion in the area of your `Otomi text' tier, and add your first line of annotation.
+\item Now try adding the `English translation' of the first line. Double click on the `English translation' tier just below the first Otomi annotation. Even if that portion of the wave form is no longer selected (blue), a text box will open up that is directly under the parent annotation. It has the same starting and ending times as the parent. This is because the linguistic type we used for this tier tells ELAN to link it to its parent tier, rather than to the time line of the audio stream. Try as you might, you won't be able to change the start and end times to be different from the parent annotation.
+\item Now go through the entire audio file and transcription, and add the Otomi and English annotations. Don't forget to save the file when you're done.
+\end{enumerate}
+
+\subsection*{Question to think about:}
+What would you do if you had two (or more) Otomi speakers? How would you change or add new types and tiers?
+\end{document}
