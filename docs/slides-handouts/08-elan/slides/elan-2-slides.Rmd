@@ -1,0 +1,37 @@
+---
+title: "Time-aligned transcriptions with ELAN"
+author: "Bradley McDonnell"
+date: "2020/10/08 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE, eval=TRUE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+# Review
+
+  * Can someone explain the difference between *Types* & Tiers?
+  * Produce/edit annotations in ELAN
+  * What **type** would you create for a *Free Translation* tier?
+  * What **type** would you create for a *Word* tier?
+
+![](img/ELAN256.png)
+
+---
+# Excercises 5--8
+
+  * Working with multiple media files
+  * Transcription & segmentation modes
+  * Automatic segmentation mode
+  * Exporting as text file, Praat, Subtitles 
+
+
+  

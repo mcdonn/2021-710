@@ -1,0 +1,90 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhfoffset[R]{3pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\geometry{margin=1in}
+\lhead{\fontsize{10}{12} \selectfont Bradley McDonnell}
+\rhead{\fontsize{10}{12} \selectfont ELAN 2: Exercise 8}
+\chead{\fontsize{10}{12} \selectfont CoLang 2012}
+\cfoot{\fontsize{10}{12} \selectfont \thepage}
+
+\begin{document}
+\begin{center}
+\section*{{Exercise 8}\\Segmenting \& Exporting Files Quickly}
+\end{center}
+
+\noindent In this exercise we will be using (semi-)automated tools in ELAN \& Audacity to segment a wordlist and export them as separate files. We will learn how to work with `\texttt{Audio Recognizer}' in ELAN and how to export ELAN files into Audacity's `labels'.\\
+
+\noindent Today's files are found in the folder called \texttt{`SNA-Velarization-Wordlist'}.\\
+
+\subsection*{Step one: Create a new ELAN file}
+As you have done many times now, add/change tiers \& types. You should have two types \& two tiers: 
+\begin{description}
+  \item[Types: ] \textit{text} \& \textit{translation} 
+  \item[Tiers: ] \textit{Shona Word} \& \textit{English Gloss}
+\end{description}
+
+\subsection*{Step two: Set up the \texttt{`Audio Recognizer'}}
+In the top pane, there are a number of tabs: \texttt{`Grid'}, \texttt{`Text'}, \texttt{`Subtitles'}, \texttt{`Audio Recognizer'}, \texttt{`Meta Data'}, \texttt{`Controls'}.\\
+\begin{enumerate}
+\item Select \texttt{`Audio Recognizer'}.
+\end{enumerate}
+You will see a number of separate drop-down menus \& boxes.
+\begin{description}
+\item[Recognizer: ] \texttt{`Silence recognizer MPI-PL'} (We will use this recognizer).
+\item[File(s): ] \texttt{`SNA-Velarization-Wordlist.wav'} should already be selected.
+\item[Selections: ] Find a flat (silent) section of the waveform and select a small portion--it need not be long. Click \texttt{`Add'}. This will be used as the baseline for which silence is detected by the audio recognizer.
+\item[Parameters: ] \texttt{`Minimal Silence Duration'} \& \texttt{`Minimal Non Silence Duration'} are set to \texttt{200 Milliseconds}. You can leave this for now. 
+\item[Progress: ] You can now click \texttt{`Start'}. 
+\end{description} 
+Once you hit start, blue lines will appear on the waveform some with an \texttt{`x'} (non silence) and others with an \texttt{`s'} (silence).\\
+
+\noindent Try adjusting the \texttt{`Minimal Silence Duration'} to 300 or 400 Milliseconds. What happens?
+\subsection*{Step three: Create tiers from \texttt{`Audio Recognizer'}}
+Now you can create tiers from the silences and/or non-silences. 
+
+\begin{enumerate}
+\item Click on \texttt{`Create Tier(s)\ldots'} in the bottom left corner of the \texttt{`Audio Recognizer'} tab in the top pane.
+\end{enumerate}
+This opens up the \texttt{`Create tiers from segments'} dialog box. You'll see several things in this box:
+\begin{itemize}
+\item[-] \texttt{Select a segmentation}, which allows you to choose the a separate channel if you have a stereo recording. Because we have a mono recording, we only have one option here. 
+\item[-] \texttt{Select and configure segments}, which allows you to select whether you want to create tiers from noise or silence or both. We want to make annotations from noise, so uncheck \texttt{`s'} under \texttt{`Include in tier'}.
+\item[-] Leave everything else as is \& click \texttt{Create}.
+\end{itemize}
+
+\subsection*{Step four: Delete, Adjust \& Input annotations}
+You will see that ELAN automatically created annotations for you. However, these will probably not be 100\% correct, so you may need to do some cleanup. Use the file:\\ \texttt{SNA-Velarization-Wordlist.txt} and input your words. 
+
+\subsection*{Step five: Export to Audacity}
+Once you have all of your annotations, you will now export your wordlist to Audacity. 
+\begin{enumerate}
+  \item Go to \texttt{File} $>$ \texttt{Export As}  $>$ \texttt{Tab-delimited text\dots}
+  \item On the top of the dialogue box, check the box with the tier \texttt{`Shona Word'} and make sure all other tiers are unchecked.
+  \item Make sure that \texttt{`Exclude tier names from output'}, \texttt{`Begin time'}, \texttt{`End time'}, \& \texttt{`ss.msec'} are all checked. Nothing else should be checked.
+  \item Name the file something like \texttt{`SNA-Velarization-Wordlist-Export.txt'}
+\end{enumerate}
+
+\subsection*{Step six: Import into Audacity \& Export to individual \texttt{.wav} files }
+\begin{enumerate}
+  \item Open Audacity.
+  \item Go to \texttt{File} $>$ \texttt{Open\ldots} and select the audio file \texttt{`SNA-Velarization-Wordlist.wav'}
+  \item Next go to \texttt{File} $>$ \texttt{Import} $>$ \texttt{Labels\ldots}
+  \item You will now see the waveform with all of your labels (annotations). Next you want to export your files. Go to \texttt{File} $>$ \texttt{Export Multiple\ldots}
+  \item In the \texttt{Export Multiple} dialogue box, keep the \texttt{`Export Multiple'} as \textit{`Other uncompressed files'}. In the box entitled \texttt{`Split files based on'} choose \textit{`Labels'} \& uncheck all other boxes. In the box entitled \texttt{`Name files:'} choose \textit{`Use Label/Track Name'}. Finally, uncheck \texttt{`Overwrite existing files'}.
+  \item Click \texttt{OK}. (Audacity may ask you to do this a number of times.)
+\end{enumerate}
+Now, you should have a folder full of  individual .wav files!
+\end{document}
