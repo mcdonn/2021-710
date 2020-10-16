@@ -260,7 +260,7 @@ If you have a disability for which you need accommodations in this class or any 
 
   * **Readings:** None
   * **Assignment:** ELAN I exercises
-  * **Additional readings:**
+  * **Class activities:** [slides](https://mcdonn.github.io/2021-710/slides-handouts/08-elan/slides/elan-2.html)
 
 ### Week 9 (10/22): FLEx I
 
