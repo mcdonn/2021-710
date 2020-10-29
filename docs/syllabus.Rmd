@@ -292,7 +292,7 @@ If you have a disability for which you need accommodations in this class or any 
 ### Week 11 (11/5): FLEx-ELAN
 
   * **Readings:** [Working with ELAN and FLEx together (Handout #1)](https://www.soas.ac.uk/elar/helpsheets/file122785.pdf)
-  * **Assignment:** [Audiovisual Recording Assignment](https://github.com/mcdonn/2020-710/blob/master/docs/slides-handouts/11-audiovisual-recording-assignment/11-audiovisual-recording-assignment.pdf)
+  * **Assignment:** 
   * **Additional readings:**
   
 ### Week 12 (11/12): Transcription (Level 1)
