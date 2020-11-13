@@ -1,0 +1,144 @@
+---
+title: "Brief Introduction to Discourse Transcription"
+subtitle: "LING 710"
+author: "Bradley McDonnell"
+institute: "UH Mānoa"
+date: "2020/4/6 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+# What are the influences led to DT?
+.pull-left[
+
+  **Chafe**
+  
+  the importance of hesitation, IU as the fundamental unit
+]
+.pull-right[
+
+**Schegeloff, etc. (CA)**
+
+Overlap, Pause, Turn Taking, etc.
+]
+
+
+---
+# What is Discourse Transcription? 
+
+> "Discourse transcription can be defined as the process of creating a representation in writing of a speech event, in such a way as to make it accessible to discourse research."
+
+...
+--
+
+> "The transcriber must learn to listen for, classify, interpret, and notate the discourse features that are deemed significant."
+
+---
+# What is the goal of Discourse Transcription?
+
+> "The goal of discourse transcription ... is to represent in writing those aspects of a given speech event ... which carry functional significance to the participants -- whether these are linguistic, paralinguistic, or nonlinguistic -- in a form that is accessible to analysis."
+
+...
+--
+
+> "The task is **not** ... to produce a record of all the acoustic or physical (articulatory) events represented on a tape." 
+
+...
+--
+
+> "The discourse transcriber seeks to write down what is significant to users of language, and for this must draw on a knowledge of the language transcribed, as well as of the culture that goes with it." (emphasis mine)
+
+---
+# What exactly do we transcribe? 
+
+### Everything? 
+  - **No!!!** 
+
+--
+  
+> "One tries to record those cues which **the interlocutors themselves attend to and make use of**, in their process of monitoring and participating in the ongoing spoken interaction." (emphasis mine)
+
+...
+--
+
+  > "Deciding what to transcribe, and what not to transcribe, is important not only for economizing effort, but also for focusing on fruitful research questions and the means required to answer them."
+
+...
+--
+
+  > "This is the reason ... that there will always be more than one way to transcribe spoken discourse: any transcription system will reflect its users' perspective and goals" (Ochs 1979).
+
+
+---
+# Transcription vs. coding
+
+  > "Transcription is anything that you have to listen to the tape for; if you can mark something without listening to the tape, that’s no longer transcription but coding."
+
+
+---
+# Transcription and language documentation (Himmelmann 2018)
+
+  > "Another level of transcription pertains to the creation of a written representation of recordings of more or less natural communicative events (everyday conversations, narratives, interactive games, speeches, etc.). The written representation typically provides the basis for the further analysis of such events." 
+
+...
+--
+
+  > "Transcription practices in this domain have been the object of theoretical and practical reflections in (different traditions of) discourse and conversation analysis, Elinor Ochs’ (1979) paper Transcription as Theory being the classic example (cp. Edwards & Lampert 1993 for a collection of papers on this topic and Bucholtz 2007 for a more extensive bibliography)." 
+
+---
+# Transcription and language documentation (Himmelmann 2018)
+
+  > "Unfortunately, neither the theoretical concerns nor the practical guidelines developed in these traditions (e.g. Du Bois et al. 1992, Selting et al. 2009) have had a major impact on practices in field linguistics and language documentation."
+
+...
+--
+
+  > "That is, despite the fact that discourse transcription is at the core of documentary linguistic activity, it remains a topic that is rarely discussed in the field. Consequently, there is little agreement about very fundamental decisions such as how to segment spoken language (cp. Himmelmann 2006 for a short overview of the main issues)."
+
+---
+# Transcription and language documentation (Himmelmann 2018)
+
+  > "More often than not, segmentation units above the word (i.e. prosodic units and/or syntactic phrases) are not explicitly discussed or justified, and are thus difficult to reconstruct and evaluate for users of a documentation. To make discourse transcription a major topic in the field, then, is one aspect of meeting the transcription challenge in language documentation."
+
+
+---
+# Intonation Units (Himmelmann 2006)
+
+> "The segmentation of continuous spoken discourse at levels higher than the orthographic word is rarely, if ever explicitly, addressed in descriptive linguistics. That is, it usually remains a mystery as to how exactly the author(s) arrived at the format of a transcript published in a text collection or in the appendix of a grammar."
+
+--
+
+# Wait what!?!
+
+Let's change this!!
+
+---
+# What is an intonation unit? 
+
+Intonation unit:
+
+  > "a stretch of speech uttered under a single coherent intonation contour"
+  
+  1.	Pause
+  2.	Pitch reset
+  3.	Final lengthening
+  
+Truncated intonation unit:
+
+  >	"...indicates that a speaker breaks off the intonation unit before completing its projected contour"
+
+---
+class: center, middle
+
+# Let's get started!

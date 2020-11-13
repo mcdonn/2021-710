@@ -300,7 +300,7 @@ If you have a disability for which you need accommodations in this class or any 
   * **Readings:** @himmelmann2006prosody, @himmelmann2018meeting, @dubois1992discourse [: ch. 1, 4-6, 10] (Introduction, Units, Speakers, Transitional Continuity, Pause)
   * **Assignment:** ELAN FLEx import export assignment
   * **Additional readings:**
-  * **Class activities:** [slides](https://mcdonn.github.io/2020-710/slides-handouts/12-dt-intro-units/1-dt-intro/1-dt-intro.html)
+  * **Class activities:** [slides](https://mcdonn.github.io/2021-710/slides-handouts/12-dt-intro-units/1-dt-intro/1-dt-intro.html)
   
 ### Week 13 (11/19): Transcription (Level 2)
 
