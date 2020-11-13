@@ -18,7 +18,6 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-
 # What are the influences led to DT?
 .pull-left[
 
