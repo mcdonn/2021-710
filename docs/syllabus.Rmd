@@ -309,7 +309,7 @@ If you have a disability for which you need accommodations in this class or any 
     * Complete DT take-home task.
     * Transcribe three minutes of conversation up to level 1. Be ready to share/discuss excerpt!
   * **Additional readings:** @dingemanse2014conversation
-  * **Class activities:** [slides](https://mcdonn.github.io/2020-710/slides-handouts/13-dt-trans-cont-pause-overlap-truncation/3-dt-transitional-continuity/3-transitional-continuity-slides.pdf)
+  * **Class activities:** [slides](https://mcdonn.github.io/2021-710/slides-handouts/13-dt-trans-cont-pause-overlap-truncation/3-dt-transitional-continuity/3-transitional-continuity-slides.html)
 
 <!-- * R 4/19: Du Bois handouts % Watch mini-lectures on RR <https://www.coursera.org/learn/reproducible-research/lecture/wdGXb/introduction}, Berez et al. (2018) %Data citation and attribution -->
 
