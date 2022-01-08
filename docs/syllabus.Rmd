@@ -245,7 +245,7 @@ If you have a disability for which you need accommodations in this class or any 
 ### Week 6 (10/1): Video conversion 
 
   * **Readings:** @pentangelo2020360o [: p. 124-157], Read over [ELAR video conversion handout](https://www.soas.ac.uk/elar/helpsheets/file120820.pdf) to get an idea of how complex video conversion can be
-  * **Class activities:** ([slides](https://mcdonn.github.io/2021-710/slides-handouts/6-video-editing/6-video-editing.html), [practice](https://github.com/mcdonn/2021-710/blob/master/docs/slides-handouts/6-video-editing/practice.md))
+  * **Class activities:** ([slides](https://mcdonn.github.io/2021-710/slides-handouts/06-video-editing/6-video-editing.html), [practice](https://github.com/mcdonn/2021-710/blob/master/docs/slides-handouts/06-video-editing/practice.md))
   * **Assignment:** Group video recording assignment    
     
 
